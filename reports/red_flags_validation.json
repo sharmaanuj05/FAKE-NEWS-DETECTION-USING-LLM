@@ -1,0 +1,68 @@
+[
+  {
+    "rule_id": "excessive_caps",
+    "total_fired": 1527,
+    "total_rate_pct": 37.63,
+    "real_fired": 466,
+    "real_rate_pct": 21.26,
+    "fake_fired": 1061,
+    "fake_rate_pct": 56.86,
+    "ratio_fake_to_real": 2.67,
+    "status": "KEPT"
+  },
+  {
+    "rule_id": "clickbait_phrases",
+    "total_fired": 63,
+    "total_rate_pct": 1.55,
+    "real_fired": 3,
+    "real_rate_pct": 0.14,
+    "fake_fired": 60,
+    "fake_rate_pct": 3.22,
+    "ratio_fake_to_real": 23.49,
+    "status": "KEPT"
+  },
+  {
+    "rule_id": "excessive_punctuation",
+    "total_fired": 224,
+    "total_rate_pct": 5.52,
+    "real_fired": 7,
+    "real_rate_pct": 0.32,
+    "fake_fired": 217,
+    "fake_rate_pct": 11.63,
+    "ratio_fake_to_real": 36.42,
+    "status": "KEPT"
+  },
+  {
+    "rule_id": "emotional_absolutist",
+    "total_fired": 3,
+    "total_rate_pct": 0.07,
+    "real_fired": 1,
+    "real_rate_pct": 0.05,
+    "fake_fired": 2,
+    "fake_rate_pct": 0.11,
+    "ratio_fake_to_real": 2.35,
+    "status": "KEPT"
+  },
+  {
+    "rule_id": "vague_authority",
+    "total_fired": 25,
+    "total_rate_pct": 0.62,
+    "real_fired": 15,
+    "real_rate_pct": 0.68,
+    "fake_fired": 10,
+    "fake_rate_pct": 0.54,
+    "ratio_fake_to_real": 0.78,
+    "status": "REMOVE (<= fake)"
+  },
+  {
+    "rule_id": "no_named_attribution",
+    "total_fired": 431,
+    "total_rate_pct": 10.62,
+    "real_fired": 61,
+    "real_rate_pct": 2.78,
+    "fake_fired": 370,
+    "fake_rate_pct": 19.83,
+    "ratio_fake_to_real": 7.13,
+    "status": "KEPT"
+  }
+]

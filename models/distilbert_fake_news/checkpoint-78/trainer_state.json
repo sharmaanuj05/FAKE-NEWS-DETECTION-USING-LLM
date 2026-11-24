@@ -1,0 +1,103 @@
+{
+  "best_global_step": 26,
+  "best_metric": 0.7439,
+  "best_model_checkpoint": "/Users/sharma_anuj05/Documents/HCL PROJECT FAKE NEWS LLM/models/distilbert_fake_news/checkpoint-26",
+  "epoch": 3.0,
+  "eval_steps": 500,
+  "global_step": 78,
+  "is_hyper_param_search": false,
+  "is_local_process_zero": true,
+  "is_world_process_zero": true,
+  "log_history": [
+    {
+      "epoch": 0.7843137254901961,
+      "grad_norm": 3.7015905380249023,
+      "learning_rate": 7.600000000000001e-06,
+      "loss": 2.7816694259643553,
+      "step": 20
+    },
+    {
+      "epoch": 1.0,
+      "eval_accuracy": 0.5922,
+      "eval_f1": 0.7439,
+      "eval_loss": 0.6733489632606506,
+      "eval_precision": 0.5922,
+      "eval_recall": 1.0,
+      "eval_roc_auc": 0.6304,
+      "eval_runtime": 0.3646,
+      "eval_samples_per_second": 282.505,
+      "eval_steps_per_second": 35.656,
+      "step": 26
+    },
+    {
+      "epoch": 1.5490196078431373,
+      "grad_norm": 7.192002296447754,
+      "learning_rate": 1.5600000000000003e-05,
+      "loss": 2.6425430297851564,
+      "step": 40
+    },
+    {
+      "epoch": 2.0,
+      "eval_accuracy": 0.5922,
+      "eval_f1": 0.6912,
+      "eval_loss": 0.6632153987884521,
+      "eval_precision": 0.6267,
+      "eval_recall": 0.7705,
+      "eval_roc_auc": 0.6175,
+      "eval_runtime": 0.3456,
+      "eval_samples_per_second": 298.024,
+      "eval_steps_per_second": 37.615,
+      "step": 52
+    },
+    {
+      "epoch": 2.313725490196078,
+      "grad_norm": 5.074883937835693,
+      "learning_rate": 1.3571428571428574e-05,
+      "loss": 2.5714773178100585,
+      "step": 60
+    },
+    {
+      "epoch": 3.0,
+      "eval_accuracy": 0.6214,
+      "eval_f1": 0.7068,
+      "eval_loss": 0.6512182950973511,
+      "eval_precision": 0.6528,
+      "eval_recall": 0.7705,
+      "eval_roc_auc": 0.6343,
+      "eval_runtime": 0.353,
+      "eval_samples_per_second": 291.769,
+      "eval_steps_per_second": 36.825,
+      "step": 78
+    }
+  ],
+  "logging_steps": 20,
+  "max_steps": 78,
+  "num_input_tokens_seen": 0,
+  "num_train_epochs": 3,
+  "save_steps": 500,
+  "stateful_callbacks": {
+    "EarlyStoppingCallback": {
+      "args": {
+        "early_stopping_patience": 2,
+        "early_stopping_threshold": 0.0
+      },
+      "attributes": {
+        "early_stopping_patience_counter": 2
+      }
+    },
+    "TrainerControl": {
+      "args": {
+        "should_epoch_stop": false,
+        "should_evaluate": false,
+        "should_log": false,
+        "should_save": true,
+        "should_training_stop": true
+      },
+      "attributes": {}
+    }
+  },
+  "total_flos": 24746824636812.0,
+  "train_batch_size": 8,
+  "trial_name": null,
+  "trial_params": null
+}

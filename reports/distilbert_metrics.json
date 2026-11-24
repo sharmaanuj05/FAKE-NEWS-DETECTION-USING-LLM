@@ -1,0 +1,26 @@
+{
+  "model": "distilbert-base-uncased",
+  "dataset": "ISOT Fake & Real News (GonzaloA/fake_news)",
+  "subset_ratio": null,
+  "epochs_run": 2.0,
+  "max_length": 256,
+  "test_accuracy": 98.42,
+  "test_precision": 98.81,
+  "test_recall": 97.75,
+  "test_f1": 98.28,
+  "test_macro_f1": 98.41,
+  "test_roc_auc": 0.9994,
+  "train_time_sec": 6352.3,
+  "peak_rss_mb": 2614.9,
+  "train_size": 32460,
+  "val_size": 4058,
+  "test_size": 4058,
+  "validation_calibration": {
+    "temperature": 1.5022,
+    "val_ece_uncalibrated": 0.0082,
+    "val_ece_calibrated": 0.0042,
+    "val_brier_uncalibrated": 0.0108,
+    "val_brier_calibrated": 0.01,
+    "val_samples_used": 4058
+  }
+}

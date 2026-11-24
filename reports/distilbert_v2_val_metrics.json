@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-10-04T10:33:55Z",
+  "val_samples": 1910,
+  "peak_ram_gb": 1.238,
+  "val_accuracy": 0.8791,
+  "val_macro_f1": 0.8787,
+  "val_roc_auc": 0.9626,
+  "val_ece_uncalibrated": 0.0174,
+  "val_ece_calibrated": 0.0155,
+  "optimal_temperature": 1.2202,
+  "selected_uncertain_threshold": 0.7,
+  "new_model_sha256": "af67ce526afe647161bda7f3e54362e821f01a6866c6f11e9ea6668ce27f889f",
+  "old_model_sha256": "275aff24b183263e14c89bf59c2913c67194d3e556a60666c8ac2d9885d09d31"
+}

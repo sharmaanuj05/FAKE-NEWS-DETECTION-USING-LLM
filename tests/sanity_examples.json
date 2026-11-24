@@ -1,0 +1,133 @@
+{
+  "real_examples": [
+    {
+      "id": "real_1",
+      "text": "NASA's James Webb Space Telescope detected atmospheric water vapor on an exoplanet located 1,000 light-years from Earth.",
+      "expected": "REAL"
+    },
+    {
+      "id": "real_2",
+      "text": "The Federal Reserve held the benchmark federal funds rate steady in its latest monetary policy announcement following the FOMC meeting.",
+      "expected": "REAL"
+    },
+    {
+      "id": "real_3",
+      "text": "The World Health Organization confirmed an increase in seasonal respiratory illnesses across several countries in Europe.",
+      "expected": "REAL"
+    },
+    {
+      "id": "real_4",
+      "text": "The United Nations General Assembly convened in New York to deliberate on global humanitarian relief initiatives.",
+      "expected": "REAL"
+    },
+    {
+      "id": "real_5",
+      "text": "Electric vehicle manufacturer Tesla reported third-quarter vehicle delivery numbers that matched Wall Street analyst estimates.",
+      "expected": "REAL"
+    },
+    {
+      "id": "real_6",
+      "text": "The Bank of England raised interest rates by 25 basis points in an effort to bring inflation down to its 2% target.",
+      "expected": "REAL"
+    },
+    {
+      "id": "real_7",
+      "text": "The European Union announced strict antitrust regulations targeting major digital platform gatekeepers.",
+      "expected": "REAL"
+    },
+    {
+      "id": "real_8",
+      "text": "Scientists at MIT successfully synthesized a new superconducting material under laboratory conditions.",
+      "expected": "REAL"
+    },
+    {
+      "id": "real_9",
+      "text": "The Department of Transportation awarded $500 million in federal infrastructure grants to modernize railway bridges.",
+      "expected": "REAL"
+    },
+    {
+      "id": "real_10",
+      "text": "Japan's central bank signaled a possible end to negative interest rates as wage growth showed sustained momentum.",
+      "expected": "REAL"
+    }
+  ],
+  "fake_examples": [
+    {
+      "id": "fake_1",
+      "text": "BOMBSHELL: Secret military tribunals have executed top congressional leaders at Guantanamo Bay and replaced them with body doubles!",
+      "expected": "FAKE"
+    },
+    {
+      "id": "fake_2",
+      "text": "SHOCKING PROOF: Government secretly injecting microchips into public school drinking fountains to monitor citizens!",
+      "expected": "FAKE"
+    },
+    {
+      "id": "fake_3",
+      "text": "Scientists reveal that the moon landing was staged in a Hollywood basement and astronauts never left orbit.",
+      "expected": "FAKE"
+    },
+    {
+      "id": "fake_4",
+      "text": "Urgent warning: Eating bananas causes immediate cancer according to leaked hospital documents that the media is hiding!",
+      "expected": "FAKE"
+    },
+    {
+      "id": "fake_5",
+      "text": "Pope Francis announced all world religions must merge into one mandatory global cult by the end of next month.",
+      "expected": "FAKE"
+    },
+    {
+      "id": "fake_6",
+      "text": "EXPOSED: Bill Gates purchased 90% of America's farmland to force the population to consume lab-grown synthetic bugs!",
+      "expected": "FAKE"
+    },
+    {
+      "id": "fake_7",
+      "text": "Celebrity superstar faked their death and was spotted living in a secret underground bunker in Switzerland.",
+      "expected": "FAKE"
+    },
+    {
+      "id": "fake_8",
+      "text": "BREAKING: NASA admits the Earth is actually hollow and an ancient civilization lives beneath Antarctica!",
+      "expected": "FAKE"
+    },
+    {
+      "id": "fake_9",
+      "text": "Doctors caught replacing baby formula with secret experimental mind-control serum in pediatric hospitals nationwide.",
+      "expected": "FAKE"
+    },
+    {
+      "id": "fake_10",
+      "text": "Whistleblower confirms that 5G cellular towers are weaponized frequency transmitters causing mass amnesia.",
+      "expected": "FAKE"
+    }
+  ],
+  "edge_cases": [
+    {
+      "id": "edge_empty",
+      "text": "",
+      "expected_error": "Input text is empty"
+    },
+    {
+      "id": "edge_whitespace",
+      "text": "   \n\t  ",
+      "expected_error": "Input text is empty"
+    },
+    {
+      "id": "edge_single_word",
+      "text": "Breaking!",
+      "expected_error": "Input text is too short to reliably evaluate (less than 3 words)"
+    },
+    {
+      "id": "edge_non_english",
+      "text": "El gobierno aprobó nuevas reformas económicas hoy tras intensas negociaciones en el parlamento.",
+      "notes": "Non-English text: handled gracefully without crash"
+    },
+    {
+      "id": "edge_very_long",
+      "text": "Global trade representatives concluded a comprehensive multilateral economic summit today addressing tariff structures across supply chains and regional market integration. The ministerial session highlighted trade corridors and cross-border customs regulations. Bilateral working groups submitted preliminary reports regarding semiconductor trade pacts and supply chain resilient initiatives. Financial institutions noted that liquidity adjustments could mitigate currency volatility across international ports. Delegates expressed optimism regarding ongoing talks scheduled for the upcoming fiscal quarter.",
+      "notes": "Very long article (>3000 chars): truncated cleanly to max_length without crash"
+    }
+  ]
+}

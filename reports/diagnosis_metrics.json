@@ -1,0 +1,287 @@
+{
+  "timestamp": "2026-10-04T07:28:55Z",
+  "style_test": {
+    "fake_claims_original_real_count": 3,
+    "fake_claims_formal_real_count": 10,
+    "real_claims_original_fake_count": 1,
+    "real_claims_sensational_fake_count": 10,
+    "fake_style_items": [
+      {
+        "id": 1,
+        "topic": "science",
+        "original_text": "NASA officially admitted that the Earth is hollow and inhabited by ancient civilizations who control the weather with quantum lasers",
+        "original_pred": "FAKE",
+        "original_fake_prob": 0.773,
+        "formal_text": "WASHINGTON (Reuters) - The National Aeronautics and Space Administration acknowledged in an internal briefing that subterranean structures within the Earth contain ancient human settlements utilizing atmospheric modulation systems.",
+        "formal_pred": "REAL",
+        "formal_fake_prob": 0.0068,
+        "delta_fake_prob": -0.7663
+      },
+      {
+        "id": 2,
+        "topic": "finance",
+        "original_text": "Federal Reserve abolishes US dollar to replace it with mandatory microchip cryptocurrency by next week",
+        "original_pred": "REAL",
+        "original_fake_prob": 0.3377,
+        "formal_text": "WASHINGTON (Reuters) - The Federal Reserve announced on Wednesday that physical United States currency will be phased out and superseded by a mandatory central bank digital asset architecture.",
+        "formal_pred": "REAL",
+        "formal_fake_prob": 0.0017,
+        "delta_fake_prob": -0.336
+      },
+      {
+        "id": 3,
+        "topic": "technology",
+        "original_text": "5G cellular towers transmit biological viruses through electromagnetic radiation",
+        "original_pred": "FAKE",
+        "original_fake_prob": 0.6593,
+        "formal_text": "GENEVA (Reuters) - Epidemiological analysts reported that fifth-generation wireless telecommunications infrastructure actively propagates viral pathogens via high-frequency electromagnetic transmissions.",
+        "formal_pred": "REAL",
+        "formal_fake_prob": 0.0055,
+        "delta_fake_prob": -0.6538
+      },
+      {
+        "id": 4,
+        "topic": "science",
+        "original_text": "James Webb Space Telescope detects artificial city lights and neon billboards on Proxima Centauri b",
+        "original_pred": "REAL",
+        "original_fake_prob": 0.3984,
+        "formal_text": "PARIS (Reuters) - Deep-space spectroscopic observations conducted by the James Webb Space Telescope identified organized luminescent emission grids consistent with municipal lighting on exoplanet Proxima Centauri b.",
+        "formal_pred": "REAL",
+        "formal_fake_prob": 0.0158,
+        "delta_fake_prob": -0.3826
+      },
+      {
+        "id": 5,
+        "topic": "entertainment",
+        "original_text": "Morgan Freeman dies peacefully at his home at age 86 after brief illness",
+        "original_pred": "FAKE",
+        "original_fake_prob": 0.7928,
+        "formal_text": "LOS ANGELES (Reuters) - Academy Award-winning actor Morgan Freeman passed away at his residence on Tuesday morning following complications from a brief illness, representatives confirmed.",
+        "formal_pred": "REAL",
+        "formal_fake_prob": 0.003,
+        "delta_fake_prob": -0.7898
+      },
+      {
+        "id": 6,
+        "topic": "local news",
+        "original_text": "Massive shark photographed swimming through flooded city streets in downtown Miami after high tide",
+        "original_pred": "FAKE",
+        "original_fake_prob": 0.8879,
+        "formal_text": "MIAMI (Reuters) - Municipal authorities in southern Florida documented marine apex predators traversing submerged arterial streets in downtown Miami following seasonal tidal flooding.",
+        "formal_pred": "REAL",
+        "formal_fake_prob": 0.0036,
+        "delta_fake_prob": -0.8843
+      },
+      {
+        "id": 7,
+        "topic": "health",
+        "original_text": "Bananas contain toxic levels of radioactive isotope potassium-40 capable of causing acute radiation sickness",
+        "original_pred": "FAKE",
+        "original_fake_prob": 0.9167,
+        "formal_text": "ATLANTA (Reuters) - Health inspection agencies cautioned consumers that commercially distributed bananas contain elevated concentrations of radioactive potassium-40 sufficient to induce acute radiation poisoning.",
+        "formal_pred": "REAL",
+        "formal_fake_prob": 0.0047,
+        "delta_fake_prob": -0.912
+      },
+      {
+        "id": 8,
+        "topic": "sports",
+        "original_text": "LeBron James announces immediate mid-season retirement from NBA to pursue competitive lawn bowling",
+        "original_pred": "FAKE",
+        "original_fake_prob": 0.8784,
+        "formal_text": "LOS ANGELES (Reuters) - Los Angeles Lakers forward LeBron James officially submitted paperwork announcing his immediate retirement from professional basketball to transition toward international lawn bowls.",
+        "formal_pred": "REAL",
+        "formal_fake_prob": 0.0056,
+        "delta_fake_prob": -0.8728
+      },
+      {
+        "id": 9,
+        "topic": "entertainment",
+        "original_text": "Disney confirms the immediate demolition of Cinderella Castle at Magic Kingdom to build a parking lot",
+        "original_pred": "FAKE",
+        "original_fake_prob": 0.9309,
+        "formal_text": "ORLANDO, Fla. (Reuters) - The Walt Disney Company confirmed plans to dismantle the Cinderella Castle landmark at Magic Kingdom as part of a logistical infrastructure expansion and parking facility project.",
+        "formal_pred": "REAL",
+        "formal_fake_prob": 0.0124,
+        "delta_fake_prob": -0.9185
+      },
+      {
+        "id": 10,
+        "topic": "politics",
+        "original_text": "Nancy Pelosi was arrested at an airport while attempting to flee to Switzerland with millions in cash",
+        "original_pred": "REAL",
+        "original_fake_prob": 0.0576,
+        "formal_text": "ZURICH (Reuters) - Federal law enforcement officials detained former US House Speaker Nancy Pelosi at an international airport terminal during an unscheduled transit to Switzerland involving undeclared monetary assets.",
+        "formal_pred": "REAL",
+        "formal_fake_prob": 0.0019,
+        "delta_fake_prob": -0.0557
+      }
+    ],
+    "real_style_items": [
+      {
+        "id": 1,
+        "topic": "politics",
+        "original_text": "UK Prime Minister Keir Starmer meets French President Emmanuel Macron in Paris to discuss bilateral defense treaty",
+        "original_pred": "REAL",
+        "original_real_prob": 0.997,
+        "sensational_text": "BOMBSHELL SECRET SUMMIT: UK Prime Minister and French President sneak into Paris behind closed doors to plot UNBELIEVABLE military takeover treaty!",
+        "sensational_pred": "FAKE",
+        "sensational_real_prob": 0.0045,
+        "delta_real_prob": -0.9924
+      },
+      {
+        "id": 2,
+        "topic": "science",
+        "original_text": "NASA's James Webb Space Telescope discovers oldest known black hole in galaxy GN-z11",
+        "original_pred": "REAL",
+        "original_real_prob": 0.9843,
+        "sensational_text": "TERRIFYING COSMIC MONSTER: NASA telescope stumbles upon apocalyptic ancient black hole that DEFIES ALL LAWS OF PHYSICS!",
+        "sensational_pred": "FAKE",
+        "sensational_real_prob": 0.0032,
+        "delta_real_prob": -0.9812
+      },
+      {
+        "id": 3,
+        "topic": "finance",
+        "original_text": "Federal Reserve cuts benchmark interest rate by 50 basis points in September 2024",
+        "original_pred": "REAL",
+        "original_real_prob": 0.9902,
+        "sensational_text": "PANIC AT THE FED: Central bankers SLAM emergency rate cuts as economic shockwaves rock Wall Street!",
+        "sensational_pred": "FAKE",
+        "sensational_real_prob": 0.0077,
+        "delta_real_prob": -0.9825
+      },
+      {
+        "id": 4,
+        "topic": "entertainment",
+        "original_text": "Oasis announces 2025 reunion tour across UK and Ireland after 15-year hiatus",
+        "original_pred": "REAL",
+        "original_real_prob": 0.8417,
+        "sensational_text": "HELL FREEZES OVER! Feuding brothers SHOCK the globe with historic reunion tour that will BREAK THE INTERNET!",
+        "sensational_pred": "FAKE",
+        "sensational_real_prob": 0.0042,
+        "delta_real_prob": -0.8376
+      },
+      {
+        "id": 5,
+        "topic": "local news",
+        "original_text": "Baltimore Key Bridge collapses after container ship Dali loses power and strikes support pillar",
+        "original_pred": "FAKE",
+        "original_real_prob": 0.0506,
+        "sensational_text": "HORROR DISASTER STRIKES: Enormous rogue cargo ship SMASHES massive bridge into the water in catastrophic nightmare crash!",
+        "sensational_pred": "FAKE",
+        "sensational_real_prob": 0.004,
+        "delta_real_prob": -0.0466
+      },
+      {
+        "id": 6,
+        "topic": "science",
+        "original_text": "Water ice has been confirmed at the Moon's south pole in permanently shadowed craters",
+        "original_pred": "REAL",
+        "original_real_prob": 0.989,
+        "sensational_text": "UNBELIEVABLE LUNAR SECRET REVEALED: Buried ice lakes uncovered on the dark side of the Moon by NASA!",
+        "sensational_pred": "FAKE",
+        "sensational_real_prob": 0.0037,
+        "delta_real_prob": -0.9853
+      },
+      {
+        "id": 7,
+        "topic": "technology",
+        "original_text": "Nvidia achieves market capitalization exceeding three trillion dollars driven by artificial intelligence chip demand",
+        "original_pred": "REAL",
+        "original_real_prob": 0.8766,
+        "sensational_text": "UNSTOPPABLE TECH BEHEMOTH: AI chip giant explodes past TRILLIONS in mind-blowing historic market frenzy!",
+        "sensational_pred": "FAKE",
+        "sensational_real_prob": 0.0041,
+        "delta_real_prob": -0.8725
+      },
+      {
+        "id": 8,
+        "topic": "sports",
+        "original_text": "Real Madrid defeats Borussia Dortmund 2-0 at Wembley to secure 15th UEFA Champions League title",
+        "original_pred": "REAL",
+        "original_real_prob": 0.9838,
+        "sensational_text": "TOTAL DOMINATION: European kings CRUSH opponents at Wembley to claim GLORIOUS historic trophy!",
+        "sensational_pred": "FAKE",
+        "sensational_real_prob": 0.0046,
+        "delta_real_prob": -0.9792
+      },
+      {
+        "id": 9,
+        "topic": "science",
+        "original_text": "Solar storm generates widespread auroras visible across southern United States and Europe in May 2024",
+        "original_pred": "REAL",
+        "original_real_prob": 0.9907,
+        "sensational_text": "COSMIC FURY UNLEASHED: Massive solar blast sparks blinding, eerie neon skies across the entire globe!",
+        "sensational_pred": "FAKE",
+        "sensational_real_prob": 0.0065,
+        "delta_real_prob": -0.9842
+      },
+      {
+        "id": 10,
+        "topic": "politics",
+        "original_text": "Mexico elects Claudia Sheinbaum as its first female president in historic general election",
+        "original_pred": "REAL",
+        "original_real_prob": 0.9795,
+        "sensational_text": "HISTORIC POLITICAL EARTHQUAKE: Massive landslide victory shocks nation as first woman leader takes absolute power!",
+        "sensational_pred": "FAKE",
+        "sensational_real_prob": 0.0034,
+        "delta_real_prob": -0.9761
+      }
+    ]
+  },
+  "length_test": {
+    "full_text": {
+      "sample_size": 1000,
+      "accuracy": 0.985,
+      "macro_f1": 0.985,
+      "roc_auc": 0.9994,
+      "false_real_rate": 0.018,
+      "false_fake_rate": 0.012
+    },
+    "first_30_words": {
+      "sample_size": 1000,
+      "accuracy": 0.958,
+      "macro_f1": 0.958,
+      "roc_auc": 0.9946,
+      "false_real_rate": 0.06,
+      "false_fake_rate": 0.024
+    },
+    "title_only": {
+      "sample_size": 1000,
+      "accuracy": 0.835,
+      "macro_f1": 0.833,
+      "roc_auc": 0.9423,
+      "false_real_rate": 0.056,
+      "false_fake_rate": 0.274
+    }
+  },
+  "cross_source_test": {
+    "UKPLab_liar": {
+      "dataset_name": "UKPLab/liar",
+      "split": "test",
+      "features": "{'text': Value('string'), 'label_text': Value('string'), 'labels': Value('int64'), 'context': Value('string')}",
+      "sample_size": 1283,
+      "label_mapping_by_name": {
+        "true statement": 0,
+        "false statement": 1
+      },
+      "accuracy": 0.5339,
+      "macro_f1": 0.5071,
+      "roc_auc": 0.5467,
+      "false_real_rate": 0.4357,
+      "false_fake_rate": 0.4772
+    },
+    "davanstrien_WELFake": {
+      "dataset_name": "davanstrien/WELFake",
+      "features": "{'title': Value('string'), 'text': Value('string'), 'label': ClassLabel(names=['fake', 'real'])}",
+      "sample_size": 1000,
+      "label_mapping_verified": "0 = Real, 1 = Fake (verified by sample row inspection)",
+      "accuracy": 0.92,
+      "macro_f1": 0.9199,
+      "roc_auc": 0.9748,
+      "false_real_rate": 0.114,
+      "false_fake_rate": 0.046
+    }
+  }
+}

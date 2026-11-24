@@ -1,0 +1,8 @@
+{
+  "benchmark_sample_count": 541,
+  "benchmark_elapsed_seconds": 19.55,
+  "full_training_sample_count": 10818,
+  "num_epochs": 2,
+  "estimated_full_run_minutes": 13.03,
+  "is_under_90_minutes": true
+}

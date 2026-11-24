@@ -1,0 +1,163 @@
+{
+  "timestamp": "2026-10-04T10:34:35Z",
+  "models": {
+    "old_model": {
+      "name": "distilbert_fake_news (v1)",
+      "path": "/Users/sharma_anuj05/Documents/HCL PROJECT FAKE NEWS LLM/models/distilbert_fake_news",
+      "temperature": 1.5022,
+      "max_length": 256
+    },
+    "new_model": {
+      "name": "distilbert_v2",
+      "path": "/Users/sharma_anuj05/Documents/HCL PROJECT FAKE NEWS LLM/models/distilbert_v2",
+      "temperature": 1.2202,
+      "max_length": 128
+    }
+  },
+  "benchmarks": {
+    "ISOT Test": {
+      "old_model": {
+        "sample_size": 1000,
+        "accuracy": 0.991,
+        "macro_f1": 0.991,
+        "roc_auc": 0.9999,
+        "false_real_rate": 0.014,
+        "false_fake_rate": 0.004,
+        "false_real_count": 7,
+        "false_fake_count": 2,
+        "num_fake": 500,
+        "num_real": 500,
+        "ece": 0.0033
+      },
+      "new_model": {
+        "sample_size": 1000,
+        "accuracy": 0.971,
+        "macro_f1": 0.971,
+        "roc_auc": 0.9949,
+        "false_real_rate": 0.022,
+        "false_fake_rate": 0.036,
+        "false_real_count": 11,
+        "false_fake_count": 18,
+        "num_fake": 500,
+        "num_real": 500,
+        "ece": 0.011
+      },
+      "delta": {
+        "accuracy": -0.02,
+        "macro_f1": -0.02,
+        "false_real_rate_change": 0.008,
+        "false_fake_rate_change": 0.032,
+        "ece_improvement": -0.0077
+      }
+    },
+    "Mixed Test": {
+      "old_model": {
+        "sample_size": 944,
+        "accuracy": 0.9417,
+        "macro_f1": 0.9416,
+        "roc_auc": 0.9885,
+        "false_real_rate": 0.0702,
+        "false_fake_rate": 0.0471,
+        "false_real_count": 32,
+        "false_fake_count": 23,
+        "num_fake": 456,
+        "num_real": 488,
+        "ece": 0.0464
+      },
+      "new_model": {
+        "sample_size": 944,
+        "accuracy": 0.9672,
+        "macro_f1": 0.9671,
+        "roc_auc": 0.9939,
+        "false_real_rate": 0.0219,
+        "false_fake_rate": 0.043,
+        "false_real_count": 10,
+        "false_fake_count": 21,
+        "num_fake": 456,
+        "num_real": 488,
+        "ece": 0.0119
+      },
+      "delta": {
+        "accuracy": 0.0255,
+        "macro_f1": 0.0255,
+        "false_real_rate_change": -0.0483,
+        "false_fake_rate_change": -0.0041,
+        "ece_improvement": 0.0345
+      }
+    },
+    "Unseen-Source Test (LIAR)": {
+      "old_model": {
+        "sample_size": 1283,
+        "accuracy": 0.5339,
+        "macro_f1": 0.5071,
+        "roc_auc": 0.5466,
+        "false_real_rate": 0.4357,
+        "false_fake_rate": 0.4772,
+        "false_real_count": 149,
+        "false_fake_count": 449,
+        "num_fake": 342,
+        "num_real": 941,
+        "ece": 0.3926
+      },
+      "new_model": {
+        "sample_size": 1283,
+        "accuracy": 0.689,
+        "macro_f1": 0.5974,
+        "roc_auc": 0.6448,
+        "false_real_rate": 0.6023,
+        "false_fake_rate": 0.2051,
+        "false_real_count": 206,
+        "false_fake_count": 193,
+        "num_fake": 342,
+        "num_real": 941,
+        "ece": 0.1065
+      },
+      "delta": {
+        "accuracy": 0.1551,
+        "macro_f1": 0.0903,
+        "false_real_rate_change": 0.1666,
+        "false_fake_rate_change": -0.2721,
+        "ece_improvement": 0.2861
+      }
+    },
+    "Dev Claims (40 items)": {
+      "old_model": {
+        "sample_size": 40,
+        "accuracy": 0.775,
+        "macro_f1": 0.7679,
+        "roc_auc": 0.8075,
+        "false_real_rate": 0.4,
+        "false_fake_rate": 0.05,
+        "false_real_count": 8,
+        "false_fake_count": 1,
+        "num_fake": 20,
+        "num_real": 20,
+        "ece": 0.1925
+      },
+      "new_model": {
+        "sample_size": 40,
+        "accuracy": 0.75,
+        "macro_f1": 0.7442,
+        "roc_auc": 0.7875,
+        "false_real_rate": 0.4,
+        "false_fake_rate": 0.1,
+        "false_real_count": 8,
+        "false_fake_count": 2,
+        "num_fake": 20,
+        "num_real": 20,
+        "ece": 0.1411
+      },
+      "delta": {
+        "accuracy": -0.025,
+        "macro_f1": -0.0237,
+        "false_real_rate_change": 0.0,
+        "false_fake_rate_change": 0.05,
+        "ece_improvement": 0.0514
+      }
+    }
+  },
+  "selection": {
+    "selected_model": "models/distilbert_fake_news",
+    "reason": "Old model selected as fallback because new model did not outperform on unseen benchmarks."
+  }
+}

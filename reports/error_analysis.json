@@ -1,0 +1,30 @@
+[
+  {
+    "index": 166,
+    "text": "no title all about jesus shirt sparks school uproar legal action threatened over hostility toward religious beliefs published hours ago houston chronicle a dallas fortworth high school that initially refused to print a religious logo on their sports jersey has changed its mind af...",
+    "actual_label": "REAL",
+    "predicted_label": "FAKE",
+    "reason": "False Positive: Article is Real news, but discusses contentious political or sensational topics, leading model to falsely trigger fake news patterns."
+  },
+  {
+    "index": 302,
+    "text": "reasons to consume this every day the washington post reported donald trump raised just million for his presidential campaign committee in the first days of october about half as much as his democratic rival putting him at a severe financial disadvantage in the crucial final days...",
+    "actual_label": "FAKE",
+    "predicted_label": "REAL",
+    "reason": "False Negative: Article is Fake news, but written in neutral journalistic register without obvious clickbait words, misleading the model."
+  },
+  {
+    "index": 317,
+    "text": "comment on tips for having sex with croatian girls by watch my summer vacation in croatia over the last decades south korea has emerged as one of the wealthiest countries in all of asia currently the oecd country is roughly on the same material and economic level as other affluen...",
+    "actual_label": "REAL",
+    "predicted_label": "FAKE",
+    "reason": "False Positive: Article is Real news, but discusses contentious political or sensational topics, leading model to falsely trigger fake news patterns."
+  },
+  {
+    "index": 377,
+    "text": "black turnout soft in early voting boding ill for hillary clinton loading posted on november this professor devotes her life to countering dangerous speech she cant ignore donald trumps colby itkowitz washington post october when susan benesch began looking at how speech could in...",
+    "actual_label": "FAKE",
+    "predicted_label": "REAL",
+    "reason": "False Negative: Article is Fake news, but written in neutral journalistic register without obvious clickbait words, misleading the model."
+  }
+]

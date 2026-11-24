@@ -1,0 +1,203 @@
+{
+  "dataset": "ISOT Fake and Real News (Cleaned, No Leakage)",
+  "distilbert": {
+    "model": "DistilBERT (Fine-Tuned)",
+    "test_samples": 406,
+    "accuracy": 99.01,
+    "precision": 98.93,
+    "recall": 98.93,
+    "f1": 98.93,
+    "macro_f1": 99.01,
+    "roc_auc": 0.9997,
+    "confusion_matrix": [
+      [
+        217,
+        2
+      ],
+      [
+        2,
+        185
+      ]
+    ],
+    "peak_rss_mb": 1131.5,
+    "calibration": {
+      "temperature": 1.5022,
+      "test_ece_uncalibrated": 0.0098,
+      "test_ece_calibrated": 0.0085,
+      "test_brier_uncalibrated": 0.0096,
+      "test_brier_calibrated": 0.0088
+    }
+  },
+  "ood_sanity_check": {
+    "total_claims": 20,
+    "correct_predictions": 18,
+    "accuracy_pct": 90.0,
+    "real_subset_accuracy": 100.0,
+    "fake_subset_accuracy": 80.0,
+    "cases": [
+      {
+        "text": "NASA's James Webb Space Telescope detected atmospheric water vapor on an exoplanet located 1,000 light-years from Earth.",
+        "expected": "REAL",
+        "predicted": "REAL",
+        "fake_probability": 0.0066,
+        "correct": true
+      },
+      {
+        "text": "The Federal Reserve held the benchmark federal funds rate steady in its latest monetary policy announcement following the FOMC meeting.",
+        "expected": "REAL",
+        "predicted": "REAL",
+        "fake_probability": 0.003,
+        "correct": true
+      },
+      {
+        "text": "The World Health Organization confirmed an increase in seasonal respiratory illnesses across several countries in Europe.",
+        "expected": "REAL",
+        "predicted": "REAL",
+        "fake_probability": 0.003,
+        "correct": true
+      },
+      {
+        "text": "The United Nations General Assembly convened in New York to deliberate on global humanitarian relief initiatives.",
+        "expected": "REAL",
+        "predicted": "REAL",
+        "fake_probability": 0.0029,
+        "correct": true
+      },
+      {
+        "text": "Electric vehicle manufacturer Tesla reported third-quarter vehicle delivery numbers that matched Wall Street analyst estimates.",
+        "expected": "REAL",
+        "predicted": "REAL",
+        "fake_probability": 0.0039,
+        "correct": true
+      },
+      {
+        "text": "The Bank of England raised interest rates by 25 basis points in an effort to bring inflation down to its 2% target.",
+        "expected": "REAL",
+        "predicted": "REAL",
+        "fake_probability": 0.0036,
+        "correct": true
+      },
+      {
+        "text": "The European Union announced strict antitrust regulations targeting major digital platform gatekeepers.",
+        "expected": "REAL",
+        "predicted": "REAL",
+        "fake_probability": 0.0031,
+        "correct": true
+      },
+      {
+        "text": "Scientists at MIT successfully synthesized a new superconducting material under laboratory conditions.",
+        "expected": "REAL",
+        "predicted": "REAL",
+        "fake_probability": 0.0311,
+        "correct": true
+      },
+      {
+        "text": "The Department of Transportation awarded $500 million in federal infrastructure grants to modernize railway bridges.",
+        "expected": "REAL",
+        "predicted": "REAL",
+        "fake_probability": 0.0077,
+        "correct": true
+      },
+      {
+        "text": "Japan's central bank signaled a possible end to negative interest rates as wage growth showed sustained momentum.",
+        "expected": "REAL",
+        "predicted": "REAL",
+        "fake_probability": 0.0022,
+        "correct": true
+      },
+      {
+        "text": "BOMBSHELL: Secret military tribunals have executed top congressional leaders at Guantanamo Bay and replaced them with body doubles!",
+        "expected": "FAKE",
+        "predicted": "FAKE",
+        "fake_probability": 0.9959,
+        "correct": true
+      },
+      {
+        "text": "SHOCKING PROOF: Government secretly injecting microchips into public school drinking fountains to monitor citizens!",
+        "expected": "FAKE",
+        "predicted": "FAKE",
+        "fake_probability": 0.9965,
+        "correct": true
+      },
+      {
+        "text": "Scientists reveal that the moon landing was staged in a Hollywood basement and astronauts never left orbit.",
+        "expected": "FAKE",
+        "predicted": "FAKE",
+        "fake_probability": 0.6016,
+        "correct": true
+      },
+      {
+        "text": "Urgent warning: Eating bananas causes immediate cancer according to leaked hospital documents that the media is hiding!",
+        "expected": "FAKE",
+        "predicted": "FAKE",
+        "fake_probability": 0.9966,
+        "correct": true
+      },
+      {
+        "text": "Pope Francis announced all world religions must merge into one mandatory global cult by the end of next month.",
+        "expected": "FAKE",
+        "predicted": "REAL",
+        "fake_probability": 0.0018,
+        "correct": false
+      },
+      {
+        "text": "EXPOSED: Bill Gates purchased 90% of America's farmland to force the population to consume lab-grown synthetic bugs!",
+        "expected": "FAKE",
+        "predicted": "FAKE",
+        "fake_probability": 0.9958,
+        "correct": true
+      },
+      {
+        "text": "Celebrity superstar faked their death and was spotted living in a secret underground bunker in Switzerland.",
+        "expected": "FAKE",
+        "predicted": "REAL",
+        "fake_probability": 0.3982,
+        "correct": false
+      },
+      {
+        "text": "BREAKING: NASA admits the Earth is actually hollow and an ancient civilization lives beneath Antarctica!",
+        "expected": "FAKE",
+        "predicted": "FAKE",
+        "fake_probability": 0.9966,
+        "correct": true
+      },
+      {
+        "text": "Doctors caught replacing baby formula with secret experimental mind-control serum in pediatric hospitals nationwide.",
+        "expected": "FAKE",
+        "predicted": "FAKE",
+        "fake_probability": 0.6693,
+        "correct": true
+      },
+      {
+        "text": "Whistleblower confirms that 5G cellular towers are weaponized frequency transmitters causing mass amnesia.",
+        "expected": "FAKE",
+        "predicted": "FAKE",
+        "fake_probability": 0.9901,
+        "correct": true
+      }
+    ]
+  },
+  "baseline": {
+    "model": "TF-IDF + Logistic Regression",
+    "subset_ratio": null,
+    "test_samples": 4058,
+    "test_accuracy": 97.19,
+    "test_precision": 96.3,
+    "test_recall": 97.64,
+    "test_f1": 96.97,
+    "test_macro_f1": 97.18,
+    "test_roc_auc": 0.9935,
+    "confusion_matrix": [
+      [
+        2122,
+        70
+      ],
+      [
+        44,
+        1822
+      ]
+    ],
+    "train_time_sec": 13.51,
+    "peak_rss_mb": 1463.9
+  }
+}

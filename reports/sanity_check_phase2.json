@@ -1,0 +1,321 @@
+{
+  "real_results": [
+    {
+      "id": "real_1",
+      "text": "NASA's James Webb Space Telescope detected atmospheric water vapor on an exoplanet located 1,000 light-years from Earth.",
+      "expected": "REAL",
+      "verdict": "REAL",
+      "confidence": 97.0,
+      "correct": true,
+      "summary": "The model leaned toward REAL (calibrated confidence 97.0%). Words that influenced this most: 'telescope' (0.443), 'exoplanet' (0.271), 'space' (0.256), 'detected' (0.255), 'located' (0.173). Warning signs found: none. This reflects linguistic writing patterns, not verified facts."
+    },
+    {
+      "id": "real_2",
+      "text": "The Federal Reserve held the benchmark federal funds rate steady in its latest monetary policy announcement following the FOMC meeting.",
+      "expected": "REAL",
+      "verdict": "REAL",
+      "confidence": 98.3,
+      "correct": true,
+      "summary": "The model leaned toward REAL (calibrated confidence 98.3%). Words that influenced this most: 'announcement' (0.477), 'benchmark' (0.389), 'fomc' (0.367), 'monetary' (0.340), 'held' (0.293). Warning signs found: none. This reflects linguistic writing patterns, not verified facts."
+    },
+    {
+      "id": "real_3",
+      "text": "The World Health Organization confirmed an increase in seasonal respiratory illnesses across several countries in Europe.",
+      "expected": "REAL",
+      "verdict": "REAL",
+      "confidence": 98.3,
+      "correct": true,
+      "summary": "The model leaned toward REAL (calibrated confidence 98.3%). Words that influenced this most: 'world' (0.565), 'organization' (0.524), 'confirmed' (0.435), 'seasonal' (0.338), 'health' (0.334). Warning signs found: none. This reflects linguistic writing patterns, not verified facts."
+    },
+    {
+      "id": "real_4",
+      "text": "The United Nations General Assembly convened in New York to deliberate on global humanitarian relief initiatives.",
+      "expected": "REAL",
+      "verdict": "REAL",
+      "confidence": 98.3,
+      "correct": true,
+      "summary": "The model leaned toward REAL (calibrated confidence 98.3%). Words that influenced this most: 'nations' (0.732), 'united' (0.686), 'convened' (0.554), 'assembly' (0.341), 'general' (0.337). Warning signs found: none. This reflects linguistic writing patterns, not verified facts."
+    },
+    {
+      "id": "real_5",
+      "text": "Electric vehicle manufacturer Tesla reported third-quarter vehicle delivery numbers that matched Wall Street analyst estimates.",
+      "expected": "REAL",
+      "verdict": "REAL",
+      "confidence": 97.9,
+      "correct": true,
+      "summary": "The model leaned toward REAL (calibrated confidence 97.9%). Words that influenced this most: 'manufacturer' (0.685), 'reported' (0.681), 'tesla' (0.665), 'street' (0.330), 'wall' (0.304). Warning signs found: none. This reflects linguistic writing patterns, not verified facts."
+    },
+    {
+      "id": "real_6",
+      "text": "The Bank of England raised interest rates by 25 basis points in an effort to bring inflation down to its 2% target.",
+      "expected": "REAL",
+      "verdict": "REAL",
+      "confidence": 98.1,
+      "correct": true,
+      "summary": "The model leaned toward REAL (calibrated confidence 98.1%). Words that influenced this most: 'england' (1.003), 'bank' (0.376), 'inflation' (0.283), 'rates' (0.281), 'interest' (0.180). Warning signs found: none. This reflects linguistic writing patterns, not verified facts."
+    },
+    {
+      "id": "real_7",
+      "text": "The European Union announced strict antitrust regulations targeting major digital platform gatekeepers.",
+      "expected": "REAL",
+      "verdict": "REAL",
+      "confidence": 98.2,
+      "correct": true,
+      "summary": "The model leaned toward REAL (calibrated confidence 98.2%). Words that influenced this most: 'european' (0.743), 'union' (0.453), 'gatekeepers' (0.378), 'announced' (0.377), 'digital' (0.291). Warning signs found: none. This reflects linguistic writing patterns, not verified facts."
+    },
+    {
+      "id": "real_8",
+      "text": "Scientists at MIT successfully synthesized a new superconducting material under laboratory conditions.",
+      "expected": "REAL",
+      "verdict": "REAL",
+      "confidence": 91.6,
+      "correct": true,
+      "summary": "The model leaned toward REAL (calibrated confidence 91.6%). Words that influenced this most: 'mit' (0.366), 'scientists' (0.294), 'synthesized' (0.235), 'successfully' (0.235), 'conditions' (0.070). Warning signs found: none. This reflects linguistic writing patterns, not verified facts."
+    },
+    {
+      "id": "real_9",
+      "text": "The Department of Transportation awarded $500 million in federal infrastructure grants to modernize railway bridges.",
+      "expected": "REAL",
+      "verdict": "REAL",
+      "confidence": 96.7,
+      "correct": true,
+      "summary": "The model leaned toward REAL (calibrated confidence 96.7%). Words that influenced this most: 'railway' (0.319), 'awarded' (0.285), 'grants' (0.261), 'infrastructure' (0.249), 'bridges' (0.242). Warning signs found: none. This reflects linguistic writing patterns, not verified facts."
+    },
+    {
+      "id": "real_10",
+      "text": "Japan's central bank signaled a possible end to negative interest rates as wage growth showed sustained momentum.",
+      "expected": "REAL",
+      "verdict": "REAL",
+      "confidence": 98.6,
+      "correct": true,
+      "summary": "The model leaned toward REAL (calibrated confidence 98.6%). Words that influenced this most: 'japan' (0.839), 'bank' (0.457), 'central' (0.327), 'wage' (0.203), 'rates' (0.200). Warning signs found: none. This reflects linguistic writing patterns, not verified facts."
+    }
+  ],
+  "fake_results": [
+    {
+      "id": "fake_1",
+      "text": "BOMBSHELL: Secret military tribunals have executed top congressional leaders at Guantanamo Bay and replaced them with body doubles!",
+      "expected": "FAKE",
+      "verdict": "FAKE",
+      "confidence": 97.8,
+      "correct": true,
+      "summary": "The model leaned toward FAKE (calibrated confidence 97.8%). Words that influenced this most: 'bombshell' (0.151), 'military' (0.143), 'bay' (0.137), 'tribunals' (0.133), 'secret' (0.114). Warning signs found: Clickbait Phrasing. This reflects linguistic writing patterns, not verified facts."
+    },
+    {
+      "id": "fake_2",
+      "text": "SHOCKING PROOF: Government secretly injecting microchips into public school drinking fountains to monitor citizens!",
+      "expected": "FAKE",
+      "verdict": "FAKE",
+      "confidence": 98.1,
+      "correct": true,
+      "summary": "The model leaned toward FAKE (calibrated confidence 98.1%). Words that influenced this most: 'injecting' (0.398), 'microchips' (0.347), 'government' (0.231), 'monitor' (0.126), 'public' (0.126). Warning signs found: Excessive Capitalization, Clickbait Phrasing. This reflects linguistic writing patterns, not verified facts."
+    },
+    {
+      "id": "fake_3",
+      "text": "Scientists reveal that the moon landing was staged in a Hollywood basement and astronauts never left orbit.",
+      "expected": "FAKE",
+      "verdict": "UNCERTAIN",
+      "confidence": 57.1,
+      "correct": false,
+      "summary": "The model's calibrated confidence (57.1%) was below the decision threshold (70%), resulting in an UNCERTAIN verdict. Leaned slightly toward FAKE. Influential words: 'hollywood' (0.404), 'astronauts' (0.117), 'orbit' (0.107), 'reveal' (0.099), 'staged' (0.055). Warning signs found: none. This reflects linguistic writing patterns, not verified facts."
+    },
+    {
+      "id": "fake_4",
+      "text": "Urgent warning: Eating bananas causes immediate cancer according to leaked hospital documents that the media is hiding!",
+      "expected": "FAKE",
+      "verdict": "FAKE",
+      "confidence": 98.1,
+      "correct": true,
+      "summary": "The model leaned toward FAKE (calibrated confidence 98.1%). Words that influenced this most: 'cancer' (0.247), 'hospital' (0.240), 'warning' (0.193), 'eating' (0.157), 'leaked' (0.142). Warning signs found: none. This reflects linguistic writing patterns, not verified facts."
+    },
+    {
+      "id": "fake_5",
+      "text": "Pope Francis announced all world religions must merge into one mandatory global cult by the end of next month.",
+      "expected": "FAKE",
+      "verdict": "REAL",
+      "confidence": 98.8,
+      "correct": false,
+      "summary": "The model leaned toward REAL (calibrated confidence 98.8%). Words that influenced this most: 'pope' (1.457), 'francis' (0.872), 'announced' (0.759), 'month' (0.453), 'one' (0.232). Warning signs found: none. This reflects linguistic writing patterns, not verified facts."
+    },
+    {
+      "id": "fake_6",
+      "text": "EXPOSED: Bill Gates purchased 90% of America's farmland to force the population to consume lab-grown synthetic bugs!",
+      "expected": "FAKE",
+      "verdict": "FAKE",
+      "confidence": 97.8,
+      "correct": true,
+      "summary": "The model leaned toward FAKE (calibrated confidence 97.8%). Words that influenced this most: 'bill' (0.160), 'exposed' (0.123), 'synthetic' (0.117), 'lab' (0.113), 'america' (0.097). Warning signs found: none. This reflects linguistic writing patterns, not verified facts."
+    },
+    {
+      "id": "fake_7",
+      "text": "Celebrity superstar faked their death and was spotted living in a secret underground bunker in Switzerland.",
+      "expected": "FAKE",
+      "verdict": "UNCERTAIN",
+      "confidence": 57.1,
+      "correct": false,
+      "summary": "The model's calibrated confidence (57.1%) was below the decision threshold (70%), resulting in an UNCERTAIN verdict. Leaned slightly toward REAL. Influential words: 'celebrity' (1.038), 'superstar' (0.664), 'spotted' (-0.023), 'living' (-0.122), 'death' (-0.129). Warning signs found: none. This reflects linguistic writing patterns, not verified facts."
+    },
+    {
+      "id": "fake_8",
+      "text": "BREAKING: NASA admits the Earth is actually hollow and an ancient civilization lives beneath Antarctica!",
+      "expected": "FAKE",
+      "verdict": "FAKE",
+      "confidence": 98.1,
+      "correct": true,
+      "summary": "The model leaned toward FAKE (calibrated confidence 98.1%). Words that influenced this most: 'earth' (0.248), 'nasa' (0.186), 'actually' (0.143), 'civilization' (0.130), 'lives' (0.128). Warning signs found: none. This reflects linguistic writing patterns, not verified facts."
+    },
+    {
+      "id": "fake_9",
+      "text": "Doctors caught replacing baby formula with secret experimental mind-control serum in pediatric hospitals nationwide.",
+      "expected": "FAKE",
+      "verdict": "UNCERTAIN",
+      "confidence": 62.0,
+      "correct": false,
+      "summary": "The model's calibrated confidence (62.0%) was below the decision threshold (70%), resulting in an UNCERTAIN verdict. Leaned slightly toward FAKE. Influential words: 'serum' (0.522), 'mind' (0.500), 'control' (0.361), 'formula' (0.211), 'pediatric' (0.144). Warning signs found: none. This reflects linguistic writing patterns, not verified facts."
+    },
+    {
+      "id": "fake_10",
+      "text": "Whistleblower confirms that 5G cellular towers are weaponized frequency transmitters causing mass amnesia.",
+      "expected": "FAKE",
+      "verdict": "FAKE",
+      "confidence": 96.1,
+      "correct": true,
+      "summary": "The model leaned toward FAKE (calibrated confidence 96.1%). Words that influenced this most: 'weaponized' (0.313), 'causing' (0.277), 'mass' (0.253), 'cellular' (0.186), 'towers' (0.184). Warning signs found: none. This reflects linguistic writing patterns, not verified facts."
+    }
+  ],
+  "edge_case_results": [
+    {
+      "id": "edge_empty",
+      "text": "",
+      "res": {
+        "status": "error",
+        "message": "Input text is empty. Please enter a news headline or article.",
+        "verdict": null,
+        "confidence": null,
+        "top_words": [],
+        "triggered_flags": [],
+        "summary": "No input provided to evaluate."
+      }
+    },
+    {
+      "id": "edge_whitespace",
+      "text": "   \n\t  ",
+      "res": {
+        "status": "error",
+        "message": "Input text is empty. Please enter a news headline or article.",
+        "verdict": null,
+        "confidence": null,
+        "top_words": [],
+        "triggered_flags": [],
+        "summary": "No input provided to evaluate."
+      }
+    },
+    {
+      "id": "edge_single_word",
+      "text": "Breaking!",
+      "res": {
+        "status": "error",
+        "message": "Input text is too short to reliably evaluate (less than 3 words). Please paste a headline or article excerpt.",
+        "verdict": null,
+        "confidence": null,
+        "top_words": [],
+        "triggered_flags": [],
+        "summary": "Input text is too short for reliable writing pattern analysis."
+      }
+    },
+    {
+      "id": "edge_non_english",
+      "text": "El gobierno aprob\u00f3 nuevas reformas econ\u00f3micas hoy tras inten...",
+      "res": {
+        "status": "success",
+        "verdict": "UNCERTAIN",
+        "raw_label": "FAKE",
+        "confidence": 66.9,
+        "real_probability": 33.11,
+        "fake_probability": 66.89,
+        "threshold_used": 0.7,
+        "temperature_used": 2.1579,
+        "top_words": [
+          {
+            "word": "parlamento",
+            "score": 0.1766
+          },
+          {
+            "word": "intensas",
+            "score": -0.0173
+          },
+          {
+            "word": "gobierno",
+            "score": -0.0234
+          },
+          {
+            "word": "negociaciones",
+            "score": -0.0303
+          },
+          {
+            "word": "aprobo",
+            "score": -0.0326
+          }
+        ],
+        "triggered_flags": [],
+        "summary": "The model's calibrated confidence (66.9%) was below the decision threshold (70%), resulting in an UNCERTAIN verdict. Leaned slightly toward FAKE. Influential words: 'parlamento' (0.177), 'intensas' (-0.017), 'gobierno' (-0.023), 'negociaciones' (-0.030), 'aprobo' (-0.033). Warning signs found: none. This reflects linguistic writing patterns, not verified facts."
+      }
+    },
+    {
+      "id": "edge_very_long",
+      "text": "Global trade representatives concluded a comprehensive multi...",
+      "res": {
+        "status": "success",
+        "verdict": "REAL",
+        "raw_label": "REAL",
+        "confidence": 98.6,
+        "real_probability": 98.57,
+        "fake_probability": 1.43,
+        "threshold_used": 0.7,
+        "temperature_used": 2.1579,
+        "top_words": [
+          {
+            "word": "trade",
+            "score": 0.3364
+          },
+          {
+            "word": "global",
+            "score": 0.3134
+          },
+          {
+            "word": "concluded",
+            "score": 0.2651
+          },
+          {
+            "word": "summit",
+            "score": 0.2292
+          },
+          {
+            "word": "representatives",
+            "score": 0.2015
+          }
+        ],
+        "triggered_flags": [
+          {
+            "rule_id": "no_named_attribution",
+            "name": "Missing Source Attribution",
+            "reason": "Article text contains no quoted statements or standard attribution verbs ('said', 'reported', 'according to')."
+          }
+        ],
+        "summary": "The model leaned toward REAL (calibrated confidence 98.6%). Words that influenced this most: 'trade' (0.336), 'global' (0.313), 'concluded' (0.265), 'summit' (0.229), 'representatives' (0.202). Warning signs found: Missing Source Attribution. This reflects linguistic writing patterns, not verified facts."
+      }
+    }
+  ],
+  "summary": {
+    "total_claims": 20,
+    "total_correct": 16,
+    "overall_accuracy_pct": 80.0,
+    "real_correct": 10,
+    "real_total": 10,
+    "real_accuracy_pct": 100.0,
+    "fake_correct": 6,
+    "fake_total": 10,
+    "fake_accuracy_pct": 60.0,
+    "total_uncertain": 3
+  }
+}

@@ -1,0 +1,322 @@
+[
+  {
+    "text": "Doctors confirm that drinking lemon water with salt permanently cures all forms of cancer within 48 hours without chemotherapy",
+    "label": "FAKE",
+    "type": "short claim",
+    "topic": "health",
+    "style": "formal",
+    "basis": "FactCheck.org & American Cancer Society debunking lemon water cancer cure hoaxes"
+  },
+  {
+    "text": "NASA officially admitted that the Earth is hollow and inhabited by ancient civilizations who control the weather with quantum lasers",
+    "label": "FAKE",
+    "type": "headline",
+    "topic": "science",
+    "style": "sensational",
+    "basis": "NASA Science News & Snopes: Hollow Earth and weather laser conspiracies disproven"
+  },
+  {
+    "text": "Drinking boiled garlic water completely cures COVID-19 in three hours",
+    "label": "FAKE",
+    "type": "short claim",
+    "topic": "health",
+    "style": "casual",
+    "basis": "World Health Organization (WHO) Mythbusters: No evidence garlic cures coronavirus"
+  },
+  {
+    "text": "Pope Francis shocks world, endorses Donald Trump for president",
+    "label": "FAKE",
+    "type": "headline",
+    "topic": "politics",
+    "style": "sensational",
+    "basis": "Snopes & Reuters Fact Check: Infamous viral hoax fabricated by WTOE 5 News"
+  },
+  {
+    "text": "Scientists at Harvard discover that chocolate consumption cures type 2 diabetes overnight",
+    "label": "FAKE",
+    "type": "short claim",
+    "topic": "health",
+    "style": "formal",
+    "basis": "Harvard T.H. Chan School of Public Health & PolitiFact: Fabricated medical breakthrough"
+  },
+  {
+    "text": "Federal Reserve abolishes US dollar to replace it with mandatory microchip cryptocurrency by next week",
+    "label": "FAKE",
+    "type": "headline",
+    "topic": "finance",
+    "style": "sensational",
+    "basis": "Reuters Fact Check: Federal Reserve confirmed no mandatory microchip currency"
+  },
+  {
+    "text": "5G cellular towers transmit biological viruses through electromagnetic radiation",
+    "label": "FAKE",
+    "type": "headline",
+    "topic": "technology",
+    "style": "sensational",
+    "basis": "Full Fact & WHO: 5G radio waves cannot transmit biological viruses"
+  },
+  {
+    "text": "The United Nations officially announced the immediate dissolution of national borders across all member states under Agenda 2030.",
+    "label": "FAKE",
+    "type": "article excerpt",
+    "topic": "politics",
+    "style": "formal",
+    "basis": "PolitiFact: UN Agenda 2030 does not dissolve borders or national sovereignty"
+  },
+  {
+    "text": "James Webb Space Telescope detects artificial city lights and neon billboards on Proxima Centauri b",
+    "label": "FAKE",
+    "type": "headline",
+    "topic": "science",
+    "style": "sensational",
+    "basis": "NASA / ESA JWST mission archives: No alien megastructures or cities detected"
+  },
+  {
+    "text": "FIFA strips Argentina of 2022 World Cup title due to administrative scoring technicality",
+    "label": "FAKE",
+    "type": "short claim",
+    "topic": "sports",
+    "style": "casual",
+    "basis": "Reuters Fact Check: FIFA never revoked Argentina's title"
+  },
+  {
+    "text": "Morgan Freeman dies peacefully at his home at age 86 after brief illness",
+    "label": "FAKE",
+    "type": "headline",
+    "topic": "entertainment",
+    "style": "sensational",
+    "basis": "Snopes: Repeated celebrity death hoax fabricated by clickbait sites"
+  },
+  {
+    "text": "Inhaling hydrogen peroxide through a nebulizer is a safe and effective prevention for respiratory infections",
+    "label": "FAKE",
+    "type": "short claim",
+    "topic": "health",
+    "style": "neutral",
+    "basis": "Asthma and Allergy Foundation of America & FDA warning against inhaling peroxide"
+  },
+  {
+    "text": "Charging smartphones in domestic microwaves instantly recharges the lithium-ion battery in 30 seconds",
+    "label": "FAKE",
+    "type": "short claim",
+    "topic": "technology",
+    "style": "neutral",
+    "basis": "Snopes: Wave-charging internet hoax that destroys phones and causes fires"
+  },
+  {
+    "text": "Nancy Pelosi was arrested at an airport while attempting to flee to Switzerland with millions in cash",
+    "label": "FAKE",
+    "type": "short claim",
+    "topic": "politics",
+    "style": "casual",
+    "basis": "Associated Press Fact Check: Fabricated satirical blog claim spread without basis"
+  },
+  {
+    "text": "Massive shark photographed swimming through flooded city streets in downtown Miami after high tide",
+    "label": "FAKE",
+    "type": "headline",
+    "topic": "local news",
+    "style": "sensational",
+    "basis": "PolitiFact: Recycled Hurricane Irene/Harvey photoshop hoax"
+  },
+  {
+    "text": "Leading geologists confirm that the Mariana Trench has completely dried up due to tectonic rupture",
+    "label": "FAKE",
+    "type": "short claim",
+    "topic": "science",
+    "style": "formal",
+    "basis": "NOAA Ocean Exploration: Ocean depths unchanged and stable"
+  },
+  {
+    "text": "Internal Revenue Service announces all federal income taxes are canceled for 2024 following historic treasury surplus.",
+    "label": "FAKE",
+    "type": "article excerpt",
+    "topic": "finance",
+    "style": "formal",
+    "basis": "Associated Press Fact Check: IRS confirms tax obligations remain standard law"
+  },
+  {
+    "text": "Bananas contain toxic levels of radioactive isotope potassium-40 capable of causing acute radiation sickness",
+    "label": "FAKE",
+    "type": "headline",
+    "topic": "health",
+    "style": "sensational",
+    "basis": "Health Physics Society & EPA: Dietary potassium-40 is naturally regulated and harmless"
+  },
+  {
+    "text": "LeBron James announces immediate mid-season retirement from NBA to pursue competitive lawn bowling",
+    "label": "FAKE",
+    "type": "headline",
+    "topic": "sports",
+    "style": "sensational",
+    "basis": "NBA.com / ESPN: LeBron James active and playing, false rumor"
+  },
+  {
+    "text": "Disney confirms the immediate demolition of Cinderella Castle at Magic Kingdom to build a parking lot",
+    "label": "FAKE",
+    "type": "short claim",
+    "topic": "entertainment",
+    "style": "casual",
+    "basis": "PolitiFact / Mouse Trap News satire misinterpreted as genuine news"
+  },
+  {
+    "text": "UK Prime Minister Keir Starmer meets French President Emmanuel Macron in Paris to discuss bilateral defense treaty",
+    "label": "REAL",
+    "type": "headline",
+    "topic": "politics",
+    "style": "neutral",
+    "basis": "BBC News & Reuters: Official bilateral diplomatic summit reporting"
+  },
+  {
+    "text": "The World Health Organization declared mpox a public health emergency of international concern in August 2024",
+    "label": "REAL",
+    "type": "short claim",
+    "topic": "health",
+    "style": "formal",
+    "basis": "WHO official director-general statement, August 14, 2024"
+  },
+  {
+    "text": "NASA's James Webb Space Telescope discovers oldest known black hole in galaxy GN-z11",
+    "label": "REAL",
+    "type": "headline",
+    "topic": "science",
+    "style": "neutral",
+    "basis": "NASA Goddard Space Flight Center & Nature press release"
+  },
+  {
+    "text": "Apple announced the iPhone 16 series featuring the A18 chip and camera control button in September 2024",
+    "label": "REAL",
+    "type": "short claim",
+    "topic": "technology",
+    "style": "neutral",
+    "basis": "Apple Newsroom official release, September 9, 2024"
+  },
+  {
+    "text": "Federal Reserve cuts benchmark interest rate by 50 basis points in September 2024",
+    "label": "REAL",
+    "type": "headline",
+    "topic": "finance",
+    "style": "formal",
+    "basis": "Federal Reserve FOMC press release, September 18, 2024"
+  },
+  {
+    "text": "Novak Djokovic wins Olympic gold medal in Paris 2024 completing career Golden Slam",
+    "label": "REAL",
+    "type": "headline",
+    "topic": "sports",
+    "style": "sensational",
+    "basis": "International Olympic Committee & Associated Press sports report, August 2024"
+  },
+  {
+    "text": "Oasis announces 2025 reunion tour across UK and Ireland after 15-year hiatus",
+    "label": "REAL",
+    "type": "headline",
+    "topic": "entertainment",
+    "style": "neutral",
+    "basis": "BBC News & Official Oasis announcement, August 27, 2024"
+  },
+  {
+    "text": "Baltimore Key Bridge collapses after container ship Dali loses power and strikes support pillar",
+    "label": "REAL",
+    "type": "article excerpt",
+    "topic": "local news",
+    "style": "formal",
+    "basis": "National Transportation Safety Board (NTSB) & Reuters, March 26, 2024"
+  },
+  {
+    "text": "Water ice has been confirmed at the Moon's south pole in permanently shadowed craters",
+    "label": "REAL",
+    "type": "short claim",
+    "topic": "science",
+    "style": "formal",
+    "basis": "NASA Lunar Reconnaissance Orbiter & Chandrayaan-1 data"
+  },
+  {
+    "text": "Regular aerobic exercise reduces the risk of cardiovascular disease and improves insulin sensitivity",
+    "label": "REAL",
+    "type": "short claim",
+    "topic": "health",
+    "style": "neutral",
+    "basis": "American Heart Association & CDC Physical Activity Guidelines"
+  },
+  {
+    "text": "Nvidia achieves market capitalization exceeding three trillion dollars driven by artificial intelligence chip demand",
+    "label": "REAL",
+    "type": "headline",
+    "topic": "technology",
+    "style": "formal",
+    "basis": "Bloomberg & Reuters financial market reports, June 2024"
+  },
+  {
+    "text": "Sweden officially joins NATO as its 32nd member following accession ceremony in Washington",
+    "label": "REAL",
+    "type": "article excerpt",
+    "topic": "politics",
+    "style": "formal",
+    "basis": "NATO official press release & US State Department, March 7, 2024"
+  },
+  {
+    "text": "The European Central Bank lowered its key deposit facility rate to 3.5% in September 2024",
+    "label": "REAL",
+    "type": "short claim",
+    "topic": "finance",
+    "style": "neutral",
+    "basis": "European Central Bank monetary policy decisions"
+  },
+  {
+    "text": "Real Madrid defeats Borussia Dortmund 2-0 at Wembley to secure 15th UEFA Champions League title",
+    "label": "REAL",
+    "type": "headline",
+    "topic": "sports",
+    "style": "sensational",
+    "basis": "UEFA official match report & Associated Press, June 1, 2024"
+  },
+  {
+    "text": "Solar storm generates widespread auroras visible across southern United States and Europe in May 2024",
+    "label": "REAL",
+    "type": "headline",
+    "topic": "science",
+    "style": "sensational",
+    "basis": "NOAA Space Weather Prediction Center G5 storm alert, May 10, 2024"
+  },
+  {
+    "text": "New York City congestion pricing plan paused indefinitely by Governor Kathy Hochul",
+    "label": "REAL",
+    "type": "short claim",
+    "topic": "local news",
+    "style": "casual",
+    "basis": "New York State Executive Chamber announcement & NYT, June 2024"
+  },
+  {
+    "text": "Christopher Nolan's Oppenheimer wins seven Academy Awards including Best Picture and Best Director",
+    "label": "REAL",
+    "type": "article excerpt",
+    "topic": "entertainment",
+    "style": "neutral",
+    "basis": "Academy of Motion Picture Arts and Sciences official winners list, March 2024"
+  },
+  {
+    "text": "FDA approves first cell-based gene therapy Casgevy for the treatment of sickle cell disease using CRISPR",
+    "label": "REAL",
+    "type": "article excerpt",
+    "topic": "health",
+    "style": "formal",
+    "basis": "US Food and Drug Administration press release, December 8, 2023"
+  },
+  {
+    "text": "Mexico elects Claudia Sheinbaum as its first female president in historic general election",
+    "label": "REAL",
+    "type": "headline",
+    "topic": "politics",
+    "style": "neutral",
+    "basis": "Instituto Nacional Electoral (INE) & Associated Press, June 3, 2024"
+  },
+  {
+    "text": "Microsoft announced that Copilot key will be added to new Windows 11 PC keyboards",
+    "label": "REAL",
+    "type": "short claim",
+    "topic": "technology",
+    "style": "casual",
+    "basis": "Microsoft Windows Experience Blog, January 4, 2024"
+  }
+]

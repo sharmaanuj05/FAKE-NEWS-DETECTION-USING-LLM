@@ -1,0 +1,23 @@
+{
+  "model": "TF-IDF + Logistic Regression",
+  "subset_ratio": null,
+  "test_samples": 4058,
+  "test_accuracy": 97.19,
+  "test_precision": 96.3,
+  "test_recall": 97.64,
+  "test_f1": 96.97,
+  "test_macro_f1": 97.18,
+  "test_roc_auc": 0.9935,
+  "confusion_matrix": [
+    [
+      2122,
+      70
+    ],
+    [
+      44,
+      1822
+    ]
+  ],
+  "train_time_sec": 13.51,
+  "peak_rss_mb": 1463.9
+}

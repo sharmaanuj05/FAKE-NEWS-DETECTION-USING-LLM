@@ -1,0 +1,192 @@
+{
+  "model_hashes": {
+    "files": {
+      "config.json": "c4676b590fc6fd53fae40787cee9a49e6c04a8fb7d67b7312f50ffd61cd53350",
+      "model.safetensors": "275aff24b183263e14c89bf59c2913c67194d3e556a60666c8ac2d9885d09d31",
+      "temperature_scaling.json": "9289828d2633d6a78d70170a7547c3f23b9da9fc70f014d67bbbd04c54530089",
+      "tokenizer.json": "8b79639ec74b46604e730f505186eaafb1006d2fd00f2c4930d168bb7f894680"
+    },
+    "hash_match_verified": true
+  },
+  "word_attribution": {
+    "samples_evaluated": 50,
+    "avg_top5_prob_drop": 0.0082,
+    "avg_random5_prob_drop": 0.004,
+    "drop_ratio": 2.07,
+    "is_reliable": true,
+    "attribution_method": "Captum LayerIntegratedGradients (embedding layer, n_steps=20)"
+  },
+  "red_flags_validation": [
+    {
+      "rule_id": "excessive_caps",
+      "total_fired": 1527,
+      "total_rate_pct": 37.63,
+      "real_fired": 466,
+      "real_rate_pct": 21.26,
+      "fake_fired": 1061,
+      "fake_rate_pct": 56.86,
+      "ratio_fake_to_real": 2.67,
+      "status": "KEPT"
+    },
+    {
+      "rule_id": "clickbait_phrases",
+      "total_fired": 63,
+      "total_rate_pct": 1.55,
+      "real_fired": 3,
+      "real_rate_pct": 0.14,
+      "fake_fired": 60,
+      "fake_rate_pct": 3.22,
+      "ratio_fake_to_real": 23.49,
+      "status": "KEPT"
+    },
+    {
+      "rule_id": "excessive_punctuation",
+      "total_fired": 224,
+      "total_rate_pct": 5.52,
+      "real_fired": 7,
+      "real_rate_pct": 0.32,
+      "fake_fired": 217,
+      "fake_rate_pct": 11.63,
+      "ratio_fake_to_real": 36.42,
+      "status": "KEPT"
+    },
+    {
+      "rule_id": "emotional_absolutist",
+      "total_fired": 3,
+      "total_rate_pct": 0.07,
+      "real_fired": 1,
+      "real_rate_pct": 0.05,
+      "fake_fired": 2,
+      "fake_rate_pct": 0.11,
+      "ratio_fake_to_real": 2.35,
+      "status": "KEPT"
+    },
+    {
+      "rule_id": "vague_authority",
+      "total_fired": 25,
+      "total_rate_pct": 0.62,
+      "real_fired": 15,
+      "real_rate_pct": 0.68,
+      "fake_fired": 10,
+      "fake_rate_pct": 0.54,
+      "ratio_fake_to_real": 0.78,
+      "status": "REMOVE (<= fake)"
+    },
+    {
+      "rule_id": "no_named_attribution",
+      "total_fired": 431,
+      "total_rate_pct": 10.62,
+      "real_fired": 61,
+      "real_rate_pct": 2.78,
+      "fake_fired": 370,
+      "fake_rate_pct": 19.83,
+      "ratio_fake_to_real": 7.13,
+      "status": "KEPT"
+    }
+  ],
+  "threshold_tuning_validation": [
+    {
+      "threshold": 0.5,
+      "n_kept": 4058,
+      "n_rejected": 0,
+      "pct_rejected": 0.0,
+      "accuracy_on_kept": 98.6
+    },
+    {
+      "threshold": 0.55,
+      "n_kept": 4044,
+      "n_rejected": 14,
+      "pct_rejected": 0.34,
+      "accuracy_on_kept": 98.76
+    },
+    {
+      "threshold": 0.6,
+      "n_kept": 4033,
+      "n_rejected": 25,
+      "pct_rejected": 0.62,
+      "accuracy_on_kept": 98.88
+    },
+    {
+      "threshold": 0.65,
+      "n_kept": 4024,
+      "n_rejected": 34,
+      "pct_rejected": 0.84,
+      "accuracy_on_kept": 98.98
+    },
+    {
+      "threshold": 0.7,
+      "n_kept": 4017,
+      "n_rejected": 41,
+      "pct_rejected": 1.01,
+      "accuracy_on_kept": 99.05
+    },
+    {
+      "threshold": 0.75,
+      "n_kept": 4004,
+      "n_rejected": 54,
+      "pct_rejected": 1.33,
+      "accuracy_on_kept": 99.2
+    },
+    {
+      "threshold": 0.8,
+      "n_kept": 3985,
+      "n_rejected": 73,
+      "pct_rejected": 1.8,
+      "accuracy_on_kept": 99.42
+    },
+    {
+      "threshold": 0.85,
+      "n_kept": 3965,
+      "n_rejected": 93,
+      "pct_rejected": 2.29,
+      "accuracy_on_kept": 99.52
+    },
+    {
+      "threshold": 0.9,
+      "n_kept": 3952,
+      "n_rejected": 106,
+      "pct_rejected": 2.61,
+      "accuracy_on_kept": 99.62
+    },
+    {
+      "threshold": 0.95,
+      "n_kept": 3934,
+      "n_rejected": 124,
+      "pct_rejected": 3.06,
+      "accuracy_on_kept": 99.75
+    }
+  ],
+  "chosen_threshold": 0.7,
+  "test_metrics_at_threshold": {
+    "threshold": 0.7,
+    "total_test_samples": 4058,
+    "test_samples_kept": 4026,
+    "test_samples_rejected": 32,
+    "test_rejection_rate_pct": 0.79,
+    "test_accuracy_on_kept": 98.88,
+    "test_precision_on_kept": 99.13,
+    "test_recall_on_kept": 98.43,
+    "test_f1_on_kept": 98.78,
+    "test_macro_f1_on_kept": 98.87
+  },
+  "sanity_check_20_claims": {
+    "total_claims": 20,
+    "total_correct": 16,
+    "overall_accuracy_pct": 80.0,
+    "real_correct": 10,
+    "real_total": 10,
+    "real_accuracy_pct": 100.0,
+    "fake_correct": 6,
+    "fake_total": 10,
+    "fake_accuracy_pct": 60.0,
+    "total_uncertain": 3
+  },
+  "performance_benchmarks": {
+    "num_runs": 20,
+    "avg_latency_ms": 77.2,
+    "min_latency_ms": 71.8,
+    "max_latency_ms": 85.3,
+    "p95_latency_ms": 83.2,
+    "peak_rss_mb": 1142.1
+  }
+}

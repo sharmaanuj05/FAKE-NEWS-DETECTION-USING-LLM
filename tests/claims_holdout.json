@@ -1,0 +1,322 @@
+[
+  {
+    "text": "Drinking silver nanoparticles daily completely eradicates all bacterial infections and prevents cancer",
+    "label": "FAKE",
+    "type": "short claim",
+    "topic": "health",
+    "style": "formal",
+    "basis": "NCCIH / FDA warnings on colloidal silver risks and lack of efficacy"
+  },
+  {
+    "text": "Astronomers confirm the Moon is hollow and contains a nuclear propulsion station built by extraterrestrials",
+    "label": "FAKE",
+    "type": "headline",
+    "topic": "science",
+    "style": "sensational",
+    "basis": "NASA Lunar Science / Snopes: Recycled ancient alien conspiracy"
+  },
+  {
+    "text": "Congress secretly passes law requiring citizens to surrender all gold jewelry to Fort Knox",
+    "label": "FAKE",
+    "type": "headline",
+    "topic": "politics",
+    "style": "sensational",
+    "basis": "Reuters Fact Check: Fabricated rumor confusing 1933 Executive Order 6102 with modern legislation"
+  },
+  {
+    "text": "Placing an onion next to your computer monitor absorbs 99% of harmful computer screen radiation",
+    "label": "FAKE",
+    "type": "short claim",
+    "topic": "technology",
+    "style": "neutral",
+    "basis": "PolitiFact: Myth with zero physical scientific basis"
+  },
+  {
+    "text": "Bank of America announces complete forgiveness of all personal credit card debt nationwide starting next month",
+    "label": "FAKE",
+    "type": "article excerpt",
+    "topic": "finance",
+    "style": "formal",
+    "basis": "Snopes / Bank of America statement: False viral social media rumor"
+  },
+  {
+    "text": "Eating raw elderberry stems and leaves cures pneumonia within 24 hours",
+    "label": "FAKE",
+    "type": "short claim",
+    "topic": "health",
+    "style": "casual",
+    "basis": "CDC / Poison Control: Elderberry leaves and stems contain toxic cyanogenic glycosides"
+  },
+  {
+    "text": "NFL permanently cancels Super Bowl following controversial referee decision in championship game",
+    "label": "FAKE",
+    "type": "headline",
+    "topic": "sports",
+    "style": "sensational",
+    "basis": "Associated Press Fact Check: NFL schedule remains intact, fabricated clickbait"
+  },
+  {
+    "text": "Tom Hanks announces he is permanently renouncing his American citizenship to move to Mars",
+    "label": "FAKE",
+    "type": "headline",
+    "topic": "entertainment",
+    "style": "sensational",
+    "basis": "Snopes: Satirical website article circulated as factual"
+  },
+  {
+    "text": "Geologists discover a massive underground ocean larger than the Atlantic Ocean beneath the Sahara Desert that will turn Africa into a swamp",
+    "label": "FAKE",
+    "type": "short claim",
+    "topic": "science",
+    "style": "formal",
+    "basis": "US Geological Survey: Misrepresentation of Nubian Sandstone Aquifer"
+  },
+  {
+    "text": "Alligators discovered living and breeding in the London Underground sewage system",
+    "label": "FAKE",
+    "type": "headline",
+    "topic": "local news",
+    "style": "sensational",
+    "basis": "London Transport Museum & Snopes: Classic urban legend with no evidence"
+  },
+  {
+    "text": "The European Union parliament votes to mandate English as the only allowable language in European schools by 2025.",
+    "label": "FAKE",
+    "type": "article excerpt",
+    "topic": "politics",
+    "style": "formal",
+    "basis": "EU Fact Check: Language policy remains strictly member state competence"
+  },
+  {
+    "text": "Putting potato slices in your socks overnight draws out toxins and cures the flu",
+    "label": "FAKE",
+    "type": "short claim",
+    "topic": "health",
+    "style": "neutral",
+    "basis": "Healthline / Medical News Today: Reflexology myth debunked by medical evidence"
+  },
+  {
+    "text": "Wi-Fi routers generate ionizing radiation that alters human DNA within a six-foot radius",
+    "label": "FAKE",
+    "type": "headline",
+    "topic": "technology",
+    "style": "sensational",
+    "basis": "WHO & FCC: Wi-Fi uses non-ionizing RF energy incapable of damaging DNA"
+  },
+  {
+    "text": "Investing in Venezuelan bolivar bank notes guarantees 10,000% return due to secret gold revaluation",
+    "label": "FAKE",
+    "type": "short claim",
+    "topic": "finance",
+    "style": "casual",
+    "basis": "US SEC / Financial Industry Regulatory Authority: Currency revaluation scam"
+  },
+  {
+    "text": "Usain Bolt comes out of retirement at age 38 to represent Jamaica in 2024 Olympic marathon",
+    "label": "FAKE",
+    "type": "short claim",
+    "topic": "sports",
+    "style": "neutral",
+    "basis": "World Athletics: Usain Bolt remains retired and never competed in marathons"
+  },
+  {
+    "text": "Warner Bros cancels all future Batman movies permanently following disputes over superhero licensing rights.",
+    "label": "FAKE",
+    "type": "article excerpt",
+    "topic": "entertainment",
+    "style": "casual",
+    "basis": "Variety / Hollywood Reporter: Multiple DC Batman projects remain in active production"
+  },
+  {
+    "text": "Antarctic expedition discovers perfectly preserved tropical jungle with living dinosaurs under polar ice",
+    "label": "FAKE",
+    "type": "headline",
+    "topic": "science",
+    "style": "sensational",
+    "basis": "British Antarctic Survey & Snopes: Fictional story from fake news website"
+  },
+  {
+    "text": "The US government sold the Statue of Liberty to private investors to pay off national debt",
+    "label": "FAKE",
+    "type": "short claim",
+    "topic": "politics",
+    "style": "sensational",
+    "basis": "National Park Service / Snopes: Longstanding internet satire taken seriously"
+  },
+  {
+    "text": "Applying toothpaste to severe second-degree burns instantly heals the skin without scarring",
+    "label": "FAKE",
+    "type": "short claim",
+    "topic": "health",
+    "style": "formal",
+    "basis": "American Burn Association / Mayo Clinic: Toothpaste traps heat and increases infection risk"
+  },
+  {
+    "text": "Tokyo authorities announce ban on all bicycles within city limits starting November",
+    "label": "FAKE",
+    "type": "short claim",
+    "topic": "local news",
+    "style": "neutral",
+    "basis": "Tokyo Metropolitan Police Department: No such ban exists, updated safety regulations only"
+  },
+  {
+    "text": "South Korea's parliament votes to ban the consumption and sale of dog meat by 2027",
+    "label": "REAL",
+    "type": "headline",
+    "topic": "politics",
+    "style": "neutral",
+    "basis": "BBC News & Associated Press, January 9, 2024"
+  },
+  {
+    "text": "The FDA approved Wegovy for reducing the risk of cardiovascular death, heart attack, and stroke in adults with heart disease",
+    "label": "REAL",
+    "type": "short claim",
+    "topic": "health",
+    "style": "formal",
+    "basis": "US FDA official approval release, March 8, 2024"
+  },
+  {
+    "text": "Japan becomes fifth nation to land spacecraft on Moon with SLIM precision lunar mission",
+    "label": "REAL",
+    "type": "headline",
+    "topic": "science",
+    "style": "neutral",
+    "basis": "JAXA official announcement & Reuters, January 20, 2024"
+  },
+  {
+    "text": "Google agreed to pay $700 million to settle antitrust claims regarding Play Store app distribution",
+    "label": "REAL",
+    "type": "short claim",
+    "topic": "technology",
+    "style": "neutral",
+    "basis": "US District Court filing & Reuters, December 2023"
+  },
+  {
+    "text": "Gold prices hit record high above $2,600 per ounce in September 2024",
+    "label": "REAL",
+    "type": "headline",
+    "topic": "finance",
+    "style": "formal",
+    "basis": "Bloomberg & Financial Times commodities market data"
+  },
+  {
+    "text": "Simone Biles wins three gold medals at Paris 2024 Olympics becoming most decorated US gymnast in history",
+    "label": "REAL",
+    "type": "headline",
+    "topic": "sports",
+    "style": "sensational",
+    "basis": "USA Gymnastics & Associated Press, August 2024"
+  },
+  {
+    "text": "Taylor Swift's Eras Tour becomes the first concert tour in history to gross over one billion dollars",
+    "label": "REAL",
+    "type": "headline",
+    "topic": "entertainment",
+    "style": "neutral",
+    "basis": "Pollstar & Guinness World Records, December 2023"
+  },
+  {
+    "text": "A total solar eclipse crossed North America on April 8, 2024, passing over Mexico, the United States, and Canada",
+    "label": "REAL",
+    "type": "article excerpt",
+    "topic": "local news",
+    "style": "formal",
+    "basis": "NASA Eclipse Science & National Weather Service"
+  },
+  {
+    "text": "The European Space Agency's Euclid telescope released its first full-color images of the cosmos in November 2023",
+    "label": "REAL",
+    "type": "short claim",
+    "topic": "science",
+    "style": "formal",
+    "basis": "ESA science release, November 7, 2023"
+  },
+  {
+    "text": "Vaccination against Human Papillomavirus (HPV) significantly reduces incidence of cervical cancer in women",
+    "label": "REAL",
+    "type": "short claim",
+    "topic": "health",
+    "style": "neutral",
+    "basis": "The Lancet / CDC scientific studies"
+  },
+  {
+    "text": "SpaceX successfully catches Starship Super Heavy booster with launch tower mechanical arms during fifth flight test",
+    "label": "REAL",
+    "type": "headline",
+    "topic": "technology",
+    "style": "sensational",
+    "basis": "SpaceX mission webcast & NASA Spaceflight, October 2024"
+  },
+  {
+    "text": "Finland constructed a 200-kilometer barrier fence along sections of its eastern border with Russia",
+    "label": "REAL",
+    "type": "article excerpt",
+    "topic": "politics",
+    "style": "formal",
+    "basis": "Finnish Border Guard & Reuters, 2023-2024"
+  },
+  {
+    "text": "The Bank of Japan raised its benchmark interest rate to 0.25% in July 2024, ending years of negative interest rate policy",
+    "label": "REAL",
+    "type": "short claim",
+    "topic": "finance",
+    "style": "neutral",
+    "basis": "Bank of Japan Monetary Policy Statement"
+  },
+  {
+    "text": "Spain defeats England 2-1 in Berlin to win UEFA Euro 2024 championship",
+    "label": "REAL",
+    "type": "headline",
+    "topic": "sports",
+    "style": "sensational",
+    "basis": "UEFA official tournament report & BBC Sport, July 14, 2024"
+  },
+  {
+    "text": "Scientists revive 46,000-year-old nematode worms found frozen in Siberian permafrost",
+    "label": "REAL",
+    "type": "headline",
+    "topic": "science",
+    "style": "sensational",
+    "basis": "PLOS Genetics published research paper, July 2023"
+  },
+  {
+    "text": "Venice introduces a five-euro entrance fee for day-tripper tourists on peak days during spring and summer",
+    "label": "REAL",
+    "type": "short claim",
+    "topic": "local news",
+    "style": "casual",
+    "basis": "Venice City Council & Reuters, April 2024"
+  },
+  {
+    "text": "Barbie and Oppenheimer drive global box office phenomenon known as Barbenheimer in summer 2023",
+    "label": "REAL",
+    "type": "article excerpt",
+    "topic": "entertainment",
+    "style": "neutral",
+    "basis": "Box Office Mojo & Variety"
+  },
+  {
+    "text": "The World Health Organization recommended the R21/Matrix-M malaria vaccine for preventing malaria in children",
+    "label": "REAL",
+    "type": "article excerpt",
+    "topic": "health",
+    "style": "formal",
+    "basis": "WHO news release, October 2, 2023"
+  },
+  {
+    "text": "European Union implements the Digital Markets Act designating six major tech companies as gatekeepers",
+    "label": "REAL",
+    "type": "headline",
+    "topic": "politics",
+    "style": "neutral",
+    "basis": "European Commission press release, September 2023"
+  },
+  {
+    "text": "Reddit filed for its initial public offering on the New York Stock Exchange under ticker RDDT",
+    "label": "REAL",
+    "type": "short claim",
+    "topic": "technology",
+    "style": "casual",
+    "basis": "US SEC S-1 filing & CNBC, March 2024"
+  }
+]

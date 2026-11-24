@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VERITAS AI — Fake News Detection Using LLMs & Reasoning</title>
+  <meta name="description" content="Detects misinformation via reasoning-based text classification with BERT, HuggingFace, and token attention saliency heatmaps. Optimized for 8GB laptop hardware.">
+
+  <!-- Google Fonts: Outfit, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <div class="app-container">
+    
+    <!-- Top Navigation Bar -->
+    <header class="navbar">
+      <a href="/" class="brand">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+          </svg>
+        </div>
+        <div>
+          <h1 class="brand-title">VERITAS AI</h1>
+          <div class="brand-subtitle">Fake News Detection • Reasoning LLM</div>
+        </div>
+      </a>
+
+      <div class="nav-badges">
+        <div class="badge-pill status-green">
+          <span class="pulse-dot"></span>
+          <span>8GB RAM Optimized</span>
+        </div>
+        <div class="badge-pill">
+          <span>Engine: DistilBERT / BERT</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navigation Tabs Bar -->
+    <nav class="tabs-bar">
+      <button class="tab-btn active" data-tab="tab-inspector" id="tabBtnInspector">
+        <span>🔬</span> Live Inspector
+      </button>
+      <button class="tab-btn" data-tab="tab-benchmark" id="tabBtnBenchmark">
+        <span>📊</span> Benchmark Evaluation
+      </button>
+      <button class="tab-btn" data-tab="tab-architecture" id="tabBtnArch">
+        <span>⚡</span> 8GB Optimization & Training
+      </button>
+      <button class="tab-btn" data-tab="tab-api" id="tabBtnApi">
+        <span>📖</span> Documentation & API
+      </button>
+    </nav>
+
+    <!-- ====================================================================
+         TAB 1: LIVE INSPECTOR
+         ==================================================================== -->
+    <section class="tab-pane active" id="tab-inspector">
+      
+      <!-- Hero Intro -->
+      <div class="hero">
+        <div class="hero-tag">Misinformation & Deepfake Forensics</div>
+        <h2 class="hero-title">Reasoning-Based <span>Veracity Analysis</span></h2>
+        <p class="hero-description">
+          Detects misinformation, sensationalism, and logical fallacies via multi-layer NLP deconstruction, token attention saliency, and source rigor forensics.
+        </p>
+      </div>
+
+      <!-- Presets / Quick Picks -->
+      <div class="presets-section">
+        <div class="presets-label">
+          <span>⚡ Select Educational Benchmark Case:</span>
+        </div>
+        <div class="presets-grid" id="presetsContainer">
+          <!-- Populated dynamically by JS -->
+        </div>
+      </div>
+
+      <!-- Inspector Input Card -->
+      <div class="inspector-card" id="inspectorCard">
+        <div class="form-group">
+          <label class="form-label" for="inputTitle">Article Headline / Claim (Optional)</label>
+          <input type="text" class="input-title" id="inputTitle" placeholder="e.g. Phase 3 trial demonstrates 38% reduction in melanoma...">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="inputText">Article Full Text / Source Body</label>
+          <textarea class="input-textarea" id="inputText" placeholder="Paste article text, press release, social claim, or news snippet to analyze..."></textarea>
+        </div>
+
+        <div class="form-footer">
+          <div class="stats-counter">
+            <span id="charCounter">0 chars</span> • <span id="wordCounter">0 words</span>
+          </div>
+
+          <div class="form-actions">
+            <button type="button" class="btn-secondary" id="btnClear">Clear</button>
+            <button type="button" class="btn-primary" id="btnAnalyze">
+              <span class="spinner" id="analyzeSpinner"></span>
+              <span id="analyzeBtnText">Analyze Veracity with LLM</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Results Dashboard (Hidden initially, shown after analysis) -->
+      <div id="resultsSection">
+        
+        <!-- Verdict Hero Card -->
+        <div class="verdict-card">
+          <div class="verdict-header">
+            <div class="verdict-badge-box">
+              <div class="verdict-badge" id="verdictBadge">ANALYZING...</div>
+              <div class="confidence-metric">
+                Certainty: <strong id="confidenceVal">--%</strong>
+              </div>
+            </div>
+
+            <div class="confidence-metric">
+              Misinformation Risk: <strong id="riskIndexVal">--/100</strong>
+            </div>
+          </div>
+
+          <!-- Probability Split Bar -->
+          <div class="probability-bar-wrapper">
+            <div class="prob-labels">
+              <span id="labelRealProb" style="color: #34d399;">Credible: --%</span>
+              <span id="labelFakeProb" style="color: #f87171;">Misinformation: --%</span>
+            </div>
+            <div class="prob-track">
+              <div class="prob-fill-real" id="probFillReal" style="width: 50%;"></div>
+              <div class="prob-fill-fake" id="probFillFake" style="width: 50%;"></div>
+            </div>
+          </div>
+
+          <div class="runtime-meta">
+            <div>Latency: <span id="metaLatency">-- ms</span></div>
+            <div>Inference Engine: <span id="metaEngine">--</span></div>
+            <div>Compute Device: <span id="metaDevice">--</span></div>
+            <div>Active System RAM: <span id="metaMemory">--</span></div>
+          </div>
+        </div>
+
+        <!-- 4-Pillar Forensics Grid -->
+        <div class="pillars-grid">
+          
+          <div class="pillar-card">
+            <div class="pillar-header">
+              <div class="pillar-title">Sensationalism & Clickbait</div>
+              <div class="pillar-score" id="score_sensationalism" style="color: #f43f5e;">--/100</div>
+            </div>
+            <div class="pillar-bar-track">
+              <div class="pillar-bar-fill" id="bar_sensationalism"></div>
+            </div>
+            <div class="pillar-desc">Frequency of high-arousal rhetoric, urgency traps, and conspiratorial framing.</div>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-header">
+              <div class="pillar-title">Source & Attribution Rigor</div>
+              <div class="pillar-score" id="score_sourceRigor" style="color: #10b981;">--/100</div>
+            </div>
+            <div class="pillar-bar-track">
+              <div class="pillar-bar-fill" id="bar_sourceRigor"></div>
+            </div>
+            <div class="pillar-desc">Citations of peer-reviewed journals, verified institutions, or established registries.</div>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-header">
+              <div class="pillar-title">Linguistic Bias & Punctuation</div>
+              <div class="pillar-score" id="score_linguisticBias" style="color: #f59e0b;">--/100</div>
+            </div>
+            <div class="pillar-bar-track">
+              <div class="pillar-bar-fill" id="bar_linguisticBias"></div>
+            </div>
+            <div class="pillar-desc">Aggressive capitalization, ungrounded superlatives, and emotional manipulation.</div>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-header">
+              <div class="pillar-title">Logical Fallacy Index</div>
+              <div class="pillar-score" id="score_fallacyScore" style="color: #ec4899;">--/100</div>
+            </div>
+            <div class="pillar-bar-track">
+              <div class="pillar-bar-fill" id="bar_fallacyScore"></div>
+            </div>
+            <div class="pillar-desc">Presence of panic deadlines, panaceas, and appeal to anonymous authority.</div>
+          </div>
+
+        </div>
+
+        <!-- Token Saliency Attention Heatmap -->
+        <div class="saliency-card">
+          <div class="saliency-header">
+            <div class="saliency-title">Token Attention & Saliency Heatmap</div>
+            <div class="saliency-legend">
+              <div class="legend-item">
+                <span class="legend-swatch swatch-fake"></span>
+                <span>Misinformation Cue</span>
+              </div>
+              <div class="legend-item">
+                <span class="legend-swatch swatch-real"></span>
+                <span>Credibility Anchor</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="heatmap-box" id="heatmapContainer">
+            <!-- Populated dynamically with highlighted spans -->
+          </div>
+        </div>
+
+        <!-- Chain-of-Thought Reasoning Narrative -->
+        <div class="narrative-card">
+          <div class="narrative-title">
+            <span>🧠</span> Chain-of-Thought Forensic Reasoning
+          </div>
+          <p id="reasoningSummary" style="font-size: 1.05rem; color: #e2e8f0; margin-bottom: 18px; font-weight: 500;">
+            --
+          </p>
+
+          <ul class="reasoning-list" id="reasoningStepsList">
+            <!-- Populated by JS -->
+          </ul>
+
+          <div class="checklist-box">
+            <div class="checklist-title">
+              <span>📋</span> Media Literacy Action Plan (Education & Verification)
+            </div>
+            <ul class="checklist-items" id="factCheckChecklist">
+              <!-- Populated by JS -->
+            </ul>
+          </div>
+
+          <div style="margin-top: 20px; text-align: right;">
+            <button class="btn-secondary" id="btnExport">📋 Copy Forensic Report (Markdown)</button>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ====================================================================
+         TAB 2: BENCHMARK EVALUATION
+         ==================================================================== -->
+    <section class="tab-pane" id="tab-benchmark">
+      <div class="hero">
+        <div class="hero-tag">Empirical Validation Suite</div>
+        <h2 class="hero-title">Model <span>Benchmark Evaluation</span></h2>
+        <p class="hero-description">
+          Quantitative performance metrics evaluated on balanced multi-domain test benchmarks (Healthcare, Politics, Technology, and Finance).
+        </p>
+      </div>
+
+      <div style="text-align: right; margin-bottom: 20px;">
+        <button class="btn-primary" id="btnRunBenchmark">
+          <span class="spinner" id="benchmarkSpinner"></span>
+          <span>Run Live Benchmark Suite</span>
+        </button>
+      </div>
+
+      <!-- Evaluation Stats Grid -->
+      <div class="eval-stats-grid">
+        <div class="eval-stat-card">
+          <div class="eval-stat-label">Model Accuracy</div>
+          <div class="eval-stat-value" id="benchAccuracy">--%</div>
+        </div>
+        <div class="eval-stat-card">
+          <div class="eval-stat-label">F1-Score (Weighted)</div>
+          <div class="eval-stat-value" id="benchF1" style="color: #10b981;">--%</div>
+        </div>
+        <div class="eval-stat-card">
+          <div class="eval-stat-label">Precision</div>
+          <div class="eval-stat-value" id="benchPrecision" style="color: #38bdf8;">--%</div>
+        </div>
+        <div class="eval-stat-card">
+          <div class="eval-stat-label">Recall</div>
+          <div class="eval-stat-value" id="benchRecall" style="color: #a855f7;">--%</div>
+        </div>
+        <div class="eval-stat-card">
+          <div class="eval-stat-label">ROC-AUC Score</div>
+          <div class="eval-stat-value" id="benchRocAuc" style="color: #f59e0b;">--</div>
+        </div>
+        <div class="eval-stat-card">
+          <div class="eval-stat-label">Avg Inference Latency</div>
+          <div class="eval-stat-value" id="benchLatency" style="color: #6ee7b7;">-- ms</div>
+        </div>
+      </div>
+
+      <!-- Confusion Matrix Card -->
+      <div class="confusion-matrix-wrapper">
+        <h3 style="font-family: var(--font-heading); font-size: 1.25rem; margin-bottom: 8px;">2x2 Confusion Matrix</h3>
+        <p style="font-size: 0.85rem; color: var(--text-muted);">
+          Actual Ground Truth vs Model Predictions across the benchmark test corpus.
+        </p>
+
+        <div class="matrix-grid">
+          <div class="matrix-cell header"></div>
+          <div class="matrix-cell header">Predicted CREDIBLE</div>
+          <div class="matrix-cell header">Predicted FAKE</div>
+
+          <div class="matrix-cell header">Actual CREDIBLE</div>
+          <div class="matrix-cell val-cell">
+            <div class="matrix-val" id="cmTN" style="color: #34d399;">--</div>
+            <div class="matrix-desc">True Negatives (TN)</div>
+          </div>
+          <div class="matrix-cell val-cell">
+            <div class="matrix-val" id="cmFP" style="color: #f87171;">--</div>
+            <div class="matrix-desc">False Positives (FP)</div>
+          </div>
+
+          <div class="matrix-cell header">Actual FAKE</div>
+          <div class="matrix-cell val-cell">
+            <div class="matrix-val" id="cmFN" style="color: #f87171;">--</div>
+            <div class="matrix-desc">False Negatives (FN)</div>
+          </div>
+          <div class="matrix-cell val-cell">
+            <div class="matrix-val" id="cmTP" style="color: #34d399;">--</div>
+            <div class="matrix-desc">True Positives (TP)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         TAB 3: 8GB OPTIMIZATION & TRAINING
+         ==================================================================== -->
+    <section class="tab-pane" id="tab-architecture">
+      <div class="hero">
+        <div class="hero-tag">System Architecture</div>
+        <h2 class="hero-title">8GB Laptop <span>Optimization Profile</span></h2>
+        <p class="hero-description">
+          How this project executes transformer inference and fine-tuning seamlessly on a standard 8GB RAM laptop without memory crashes.
+        </p>
+      </div>
+
+      <div class="doc-card">
+        <h3>1. DistilBERT vs BERT-Base Efficiency</h3>
+        <p style="color: var(--text-muted); margin-bottom: 12px;">
+          Standard 70B and 8B LLMs require 16GB-32GB VRAM. By utilizing DistilBERT (66 million parameters) instead of heavyweight models:
+        </p>
+        <ul style="color: var(--text-muted); margin-left: 20px; line-height: 1.8;">
+          <li><strong>Memory Footprint:</strong> Only ~260MB model size (fits comfortably inside 8GB RAM alongside macOS/Linux OS).</li>
+          <li><strong>Speedup:</strong> 60% faster inference than BERT-base while retaining 97% of BERT's language understanding capability.</li>
+          <li><strong>MPS / CUDA Auto-Offloading:</strong> Automatically offloads tensor operations to Apple Silicon MPS or NVIDIA CUDA if available, falling back gracefully to optimized multi-threaded CPU.</li>
+        </ul>
+      </div>
+
+      <div class="doc-card">
+        <h3>2. Fine-Tuning Execution Pipeline</h3>
+        <p style="color: var(--text-muted);">
+          To fine-tune the classifier on your custom dataset on an 8GB machine, execute:
+        </p>
+        <div class="code-block">
+# Activate virtual environment
+source .venv/bin/activate
+
+# Run fine-tuning with memory-safe batch size (4) and gradient accumulation
+python src/train.py --epochs 3 --batch-size 4 --model distilbert-base-uncased
+        </div>
+        <p style="color: var(--text-muted); font-size: 0.88rem;">
+          Saved checkpoints are automatically placed into <code>models/fine_tuned_bert/</code>.
+        </p>
+      </div>
+
+      <div class="doc-card">
+        <h3>3. Cache Evacuation & Memory Bounds</h3>
+        <p style="color: var(--text-muted);">
+          After each inference batch, <code>torch.mps.empty_cache()</code> or <code>torch.cuda.empty_cache()</code> is called to prevent memory leaks and keep system RAM under the 2GB safe ceiling.
+        </p>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         TAB 4: DOCUMENTATION & API
+         ==================================================================== -->
+    <section class="tab-pane" id="tab-api">
+      <div class="hero">
+        <div class="hero-tag">Integration & Cross-Industry Tooling</div>
+        <h2 class="hero-title">REST API <span>Documentation</span></h2>
+        <p class="hero-description">
+          Programmatic access for education platforms, media literacy courses, newsroom publishing workflows, and compliance pipelines.
+        </p>
+      </div>
+
+      <div class="doc-card">
+        <h3>POST /api/analyze</h3>
+        <p style="color: var(--text-muted); margin-bottom: 10px;">
+          Analyze raw text and return veracity predictions, 4-pillar scores, token saliency, and reasoning explanations.
+        </p>
+        <div class="code-block">
+curl -X POST "http://localhost:8000/api/analyze" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "title": "Phase 3 clinical trial demonstrates...",
+    "text": "A randomized, double-blind trial published in NEJM...",
+    "include_saliency": true
+  }'
+        </div>
+      </div>
+
+      <div class="doc-card">
+        <h3>GET /api/evaluate</h3>
+        <p style="color: var(--text-muted); margin-bottom: 10px;">
+          Returns quantitative accuracy, precision, recall, F1, and confusion matrix against benchmark dataset.
+        </p>
+        <div class="code-block">
+curl -X GET "http://localhost:8000/api/evaluate"
+        </div>
+      </div>
+
+      <div class="doc-card">
+        <h3>Educational Applications</h3>
+        <ul style="color: var(--text-muted); margin-left: 20px; line-height: 1.8;">
+          <li><strong>Lateral Reading Workshops:</strong> Students can paste viral social media claims to understand how sensationalist vocabulary and anonymous attributions trigger alerts.</li>
+          <li><strong>Journalism Verification:</strong> Newsrooms can scan incoming community submissions for false urgency and logical fallacies before syndication.</li>
+          <li><strong>Cybersecurity Phishing Detection:</strong> Financial institutions can flag manufactured urgency leaks that mimic executive announcements.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div><strong>VERITAS AI</strong> — Fake News Detection Using LLMs & Reasoning-Based Text Classification</div>
+      <div style="margin-top: 6px;">Engineered with Python, BERT, HuggingFace Transformers, and Vanilla CSS • Optimized for Laptop 8GB Profile</div>
+    </footer>
+
+  </div>
+
+  <script src="/static/js/app.js"></script>
+</body>
+</html>

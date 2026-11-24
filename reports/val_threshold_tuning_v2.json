@@ -1,0 +1,86 @@
+{
+  "optimal_temperature": 1.2202,
+  "selected_threshold": 0.7,
+  "threshold_analysis": [
+    {
+      "threshold": 0.5,
+      "kept_count": 1910,
+      "rejection_rate": 0.0,
+      "rejection_pct": 0.0,
+      "accuracy_on_kept": 0.8791,
+      "macro_f1_on_kept": 0.8787
+    },
+    {
+      "threshold": 0.55,
+      "kept_count": 1734,
+      "rejection_rate": 0.0921,
+      "rejection_pct": 9.21,
+      "accuracy_on_kept": 0.9118,
+      "macro_f1_on_kept": 0.9116
+    },
+    {
+      "threshold": 0.6,
+      "kept_count": 1576,
+      "rejection_rate": 0.1749,
+      "rejection_pct": 17.49,
+      "accuracy_on_kept": 0.941,
+      "macro_f1_on_kept": 0.941
+    },
+    {
+      "threshold": 0.65,
+      "kept_count": 1482,
+      "rejection_rate": 0.2241,
+      "rejection_pct": 22.41,
+      "accuracy_on_kept": 0.9588,
+      "macro_f1_on_kept": 0.9588
+    },
+    {
+      "threshold": 0.7,
+      "kept_count": 1444,
+      "rejection_rate": 0.244,
+      "rejection_pct": 24.4,
+      "accuracy_on_kept": 0.9661,
+      "macro_f1_on_kept": 0.9661
+    },
+    {
+      "threshold": 0.75,
+      "kept_count": 1414,
+      "rejection_rate": 0.2597,
+      "rejection_pct": 25.97,
+      "accuracy_on_kept": 0.9703,
+      "macro_f1_on_kept": 0.9703
+    },
+    {
+      "threshold": 0.8,
+      "kept_count": 1382,
+      "rejection_rate": 0.2764,
+      "rejection_pct": 27.64,
+      "accuracy_on_kept": 0.9754,
+      "macro_f1_on_kept": 0.9754
+    },
+    {
+      "threshold": 0.85,
+      "kept_count": 1357,
+      "rejection_rate": 0.2895,
+      "rejection_pct": 28.95,
+      "accuracy_on_kept": 0.9823,
+      "macro_f1_on_kept": 0.9823
+    },
+    {
+      "threshold": 0.9,
+      "kept_count": 1316,
+      "rejection_rate": 0.311,
+      "rejection_pct": 31.1,
+      "accuracy_on_kept": 0.9871,
+      "macro_f1_on_kept": 0.9871
+    },
+    {
+      "threshold": 0.95,
+      "kept_count": 1249,
+      "rejection_rate": 0.3461,
+      "rejection_pct": 34.61,
+      "accuracy_on_kept": 0.9904,
+      "macro_f1_on_kept": 0.9904
+    }
+  ]
+}

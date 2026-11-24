@@ -1,0 +1,16 @@
+{
+  "real": {
+    "total": 2192,
+    "correct": 2160,
+    "wrong": 16,
+    "uncertain": 16,
+    "accuracy_on_kept_pct": 99.26
+  },
+  "fake": {
+    "total": 1866,
+    "correct": 1821,
+    "wrong": 29,
+    "uncertain": 16,
+    "accuracy_on_kept_pct": 98.43
+  }
+}

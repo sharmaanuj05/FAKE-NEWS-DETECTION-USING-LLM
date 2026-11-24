@@ -1,0 +1,13 @@
+{
+  "verified_timestamp": "2026-10-04T11:40:00Z",
+  "old_model": {
+    "path": "models/distilbert_fake_news/model.safetensors",
+    "sha256": "275aff24b183263e14c89bf59c2913c67194d3e556a60666c8ac2d9885d09d31",
+    "status": "UNCHANGED_FALLBACK"
+  },
+  "new_model_v2": {
+    "path": "models/distilbert_v2/model.safetensors",
+    "sha256": "af67ce526afe647161bda7f3e54362e821f01a6866c6f11e9ea6668ce27f889f",
+    "status": "FINE_TUNED_ACTIVE"
+  }
+}

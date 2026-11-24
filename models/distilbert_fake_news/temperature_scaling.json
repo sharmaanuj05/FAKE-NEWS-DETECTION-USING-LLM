@@ -1,0 +1,8 @@
+{
+  "temperature": 1.5022,
+  "val_ece_uncalibrated": 0.0082,
+  "val_ece_calibrated": 0.0042,
+  "val_brier_uncalibrated": 0.0108,
+  "val_brier_calibrated": 0.01,
+  "val_samples_used": 4058
+}

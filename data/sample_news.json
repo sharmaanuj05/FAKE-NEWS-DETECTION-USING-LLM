@@ -1,0 +1,82 @@
+[
+  {
+    "id": "health-fake-01",
+    "category": "Healthcare & Medicine",
+    "domain": "Health",
+    "title": "SHOCKING REVELATION: Big Pharma Hiding Miracle Dandelion Root Drink That Eradicates 99% Of All Cancer Cells in 48 Hours!",
+    "content": "Secret documents smuggled out of a Swiss pharmaceutical conglomerate confirm what alternative healers have known for centuries. A simple herbal infusion of wild dandelion root brewed under specific lunar conditions causes cancer cells to disintegrate within two days. Corrupt mainstream doctors and oncologists refuse to publish this miracle breakthrough because chemotherapy generates hundreds of billions in recurring revenue. A whistleblower who wished to stay completely anonymous revealed: 'They threatened my family to keep quiet.' Share this viral report immediately before government censors scrub it from the internet!",
+    "ground_truth": "FAKE",
+    "expected_reasoning": "Sensationalist all-caps headline, conspiratorial framing, unverified anonymous source, medical claims contradicting peer-reviewed oncology, urgent call to viral action.",
+    "cues": ["SHOCKING REVELATION", "Big Pharma Hiding", "Miracle", "disintegrate within two days", "anonymous whistleblower", "Share before censors scrub"]
+  },
+  {
+    "id": "health-real-01",
+    "category": "Healthcare & Medicine",
+    "domain": "Health",
+    "title": "Phase 3 Clinical Trial Demonstrates 38% Reduction in Recurrence for Targeted Melanoma Immunotherapy",
+    "content": "A randomized, double-blind Phase 3 clinical trial published in the New England Journal of Medicine has shown that combining mRNA-based personalized immunotherapy with PD-1 checkpoint inhibitors reduces the risk of melanoma recurrence or death by 38% compared to standard therapy alone. The study followed 1,120 patients across 45 medical centers in North America and Europe over a 36-month monitoring window. Lead investigator Dr. Elena Vance noted that while mild autoimmune adverse events were observed in 12% of participants, the overall survival and toxicity profiles remained consistent with expectations for targeted therapies.",
+    "ground_truth": "REAL",
+    "expected_reasoning": "References peer-reviewed journal (NEJM), precise methodology (randomized, double-blind Phase 3), specific cohort statistics (1,120 patients, 36 months), named lead researcher, acknowledges limitations and adverse events.",
+    "cues": ["Phase 3 Clinical Trial", "New England Journal of Medicine", "randomized, double-blind", "Dr. Elena Vance", "adverse events observed in 12%"]
+  },
+  {
+    "id": "finance-fake-02",
+    "category": "Finance & Technology",
+    "domain": "Finance",
+    "title": "URGENT LEAK: Central Bank secretly planning to wipe all digital savings accounts at midnight to launch mandatory biometric credit token",
+    "content": "An emergency insider memo from high-ranking monetary authorities warns that all conventional commercial bank deposits will be frozen tonight at 11:59 PM. Citizens will be forcibly migrated to a state-controlled biometric crypto token with expiration dates. Financial insiders are frantically withdrawing all physical gold and cash. If you do not transfer your balances to encrypted offshore wallets immediately using the link below, your life savings will be wiped permanently.",
+    "ground_truth": "FAKE",
+    "expected_reasoning": "Manufactured panic deadline ('midnight tonight'), phishing/urgency mechanics, unverified leak claims, lack of institutional corroboration, fraudulent financial call-to-action.",
+    "cues": ["URGENT LEAK", "secretly planning", "midnight", "frantically withdrawing", "link below", "wiped permanently"]
+  },
+  {
+    "id": "finance-real-02",
+    "category": "Finance & Technology",
+    "domain": "Finance",
+    "title": "Federal Reserve Holds Benchmark Interest Rate Steady at 5.25%-5.50% Amid Easing Core Inflation",
+    "content": "The Federal Open Market Committee concluded its two-day policy meeting today by unanimously voting to maintain the benchmark federal funds rate in the target range of 5.25% to 5.50%. In the official press conference, Chairman Jerome Powell stated that recent economic indicators show moderate growth in consumer spending and modest softening in labor market pressures, with core PCE inflation moderating toward the central bank's long-term 2% objective. The summary of economic projections signaled two potential rate cuts before the end of the fiscal year, contingent on incoming employment data.",
+    "ground_truth": "REAL",
+    "expected_reasoning": "Official government agency process (FOMC meeting), on-the-record public official quote (Chairman Powell), balanced macroeconomic data, verifiable public economic calendar.",
+    "cues": ["Federal Open Market Committee", "unanimously voting", "Jerome Powell", "core PCE inflation", "economic projections"]
+  },
+  {
+    "id": "tech-fake-03",
+    "category": "Technology & Science",
+    "domain": "Science",
+    "title": "Scientists Confirm 5G High-Frequency Towers Disrupt Human DNA Frequencies and Alter Sleep Waves",
+    "content": "A suppressed underground study conducted by rebel European researchers proves that telecommunications carriers are broadcasting low-frequency resonance signals through 5G towers to alter human cognitive frequencies. The secret report explains that electromagnetic waves interact directly with cellular water molecules to trigger acute disorientation and insomnia. Mainstream academic institutions declined to review the findings after receiving millions in undisclosed telecom grant money.",
+    "ground_truth": "FAKE",
+    "expected_reasoning": "Pseudoscientific jargon ('human DNA frequencies', 'sleep waves'), conspiracy trope of suppressed science and compromised universities, no citation of verified lab or peer-reviewed literature.",
+    "cues": ["suppressed underground study", "rebel researchers", "secret report", "undisclosed telecom grant money"]
+  },
+  {
+    "id": "tech-real-03",
+    "category": "Technology & Science",
+    "domain": "Science",
+    "title": "James Webb Space Telescope Detects Carbon Dioxide and Methane in Atmosphere of Exoplanet K2-18b",
+    "content": "Astronomers analyzing spectroscopic transmission data from NASA's James Webb Space Telescope have identified the presence of carbon dioxide and methane in the atmosphere of K2-18b, an exoplanet 8.6 times as massive as Earth located 120 light-years away in the constellation Leo. The findings, published in the Astrophysical Journal Letters by the Cambridge University astrophysics consortium, suggest that K2-18b could possess a hydrogen-rich atmosphere overlying a water-ocean-covered mantle, classifying it as a candidate Hycean world.",
+    "ground_truth": "REAL",
+    "expected_reasoning": "Cites primary scientific telescope (JWST), specific astronomical coordinates and data (K2-18b, 120 light years, mass 8.6x Earth), published in peer-reviewed venue (Astrophysical Journal Letters), measured academic tone.",
+    "cues": ["James Webb Space Telescope", "spectroscopic transmission data", "Astrophysical Journal Letters", "Cambridge University", "Hycean world"]
+  },
+  {
+    "id": "edu-fake-04",
+    "category": "Education & Civic Literacy",
+    "domain": "Civics",
+    "title": "Government Quietly Signs Emergency Law Banning All History Textbooks Published Before 2020",
+    "content": "Under cover of darkness late Friday night, education department officials enacted an unprecedented mandate ordering public school libraries to confiscate and incinerate any historical textbook printed prior to 2020. Anonymous classroom teachers report that military observers have already arrived on campuses to enforce the purge. 'They are rewriting our entire national memory,' claimed a person close to the situation.",
+    "ground_truth": "FAKE",
+    "expected_reasoning": "Extraordinary dystopian claim lacking legal or legislative evidence, emotional hyperbole ('incinerate', 'cover of darkness'), anonymous sources claiming military intervention in schools.",
+    "cues": ["Under cover of darkness", "incinerate", "Anonymous classroom teachers", "military observers", "rewriting national memory"]
+  },
+  {
+    "id": "edu-real-04",
+    "category": "Education & Civic Literacy",
+    "domain": "Civics",
+    "title": "National Assessment of Educational Progress Reports Mixed Post-Pandemic Reading and Math Scores",
+    "content": "The National Center for Education Statistics released findings from the latest National Assessment of Educational Progress, commonly referred to as 'The Nation's Report Card'. The survey of over 240,000 fourth and eighth graders across 50 states found modest recovery in fourth-grade reading proficiencies, while eighth-grade mathematics performance remained 4 points below 2019 baseline levels. Education Secretary Miguel Cardona emphasized targeted federal tutoring investments to close persistent socioeconomic score disparities.",
+    "ground_truth": "REAL",
+    "expected_reasoning": "Standard national statistical agency source (NCES, NAEP), transparent sampling methodology (240,000 students), nuanced multi-factor results (reading improved while math lagged), official quotes with verifiable public policy context.",
+    "cues": ["National Center for Education Statistics", "Nation's Report Card", "240,000 fourth and eighth graders", "statistically significant", "Miguel Cardona"]
+  }
+]

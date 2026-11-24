@@ -1,0 +1,8 @@
+{
+  "samples_evaluated": 50,
+  "avg_top5_prob_drop": 0.0082,
+  "avg_random5_prob_drop": 0.004,
+  "drop_ratio": 2.07,
+  "is_reliable": true,
+  "attribution_method": "Captum LayerIntegratedGradients (embedding layer, n_steps=20)"
+}

@@ -1,0 +1,12 @@
+{
+  "threshold": 0.7,
+  "total_test_samples": 4058,
+  "test_samples_kept": 4026,
+  "test_samples_rejected": 32,
+  "test_rejection_rate_pct": 0.79,
+  "test_accuracy_on_kept": 98.88,
+  "test_precision_on_kept": 99.13,
+  "test_recall_on_kept": 98.43,
+  "test_f1_on_kept": 98.78,
+  "test_macro_f1_on_kept": 98.87
+}
